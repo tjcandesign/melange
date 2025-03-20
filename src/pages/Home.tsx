@@ -12,12 +12,12 @@ const Home: React.FC = () => {
     {
       name: "Mélange",
       description: "DC's acclaimed restaurant featuring Ethiopian-spiced gourmet burgers crafted with French culinary techniques",
-      image: images.melange.hero
+      image: "/images/burger.jpg"
     },
     {
       name: "Doro Soul Food",
       description: "Traditional American soul food infused with Ethiopian flavors, from Michelin-starred Chef Elias Taddesse",
-      image: images.doro.hero
+      image: "/images/chicken.jpg"
     },
     {
       name: "Moya",
@@ -51,12 +51,12 @@ const Home: React.FC = () => {
           <VStack spacing={6} align="flex-start" maxW="600px">
             <Heading 
               as="h1" 
-              size="2xl" 
+              size="4xl" 
               fontFamily="heading"
             >
               Where Ethiopian Heritage Meets Culinary Innovation
             </Heading>
-            <Text fontSize="xl">
+            <Text fontSize="xl" fontFamily="Inter">
               Experience the unique fusion of Ethiopian flavors with modern American cuisine,
               crafted by Michelin-starred Chef Elias Taddesse
             </Text>
@@ -73,6 +73,9 @@ const Home: React.FC = () => {
           <Heading textAlign="center" mb={12} fontFamily="heading">
             Our Restaurant Concepts
           </Heading>
+          <Text textAlign="center" fontSize="xl" mb={8} fontFamily="Inter">
+            Experience three unique culinary concepts that blend Ethiopian heritage with modern innovation
+          </Text>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
             {restaurants.map((restaurant) => (
               <RestaurantCard
@@ -100,7 +103,7 @@ const Home: React.FC = () => {
             </Box>
             <VStack align="flex-start" spacing={6}>
               <Heading fontFamily="heading">Meet Chef Elias Taddesse</Heading>
-              <Text fontSize="lg">
+              <Text fontSize="lg" fontFamily="Inter">
                 Ethiopian-born and French-trained, Chef Elias Taddesse brings his Michelin-starred 
                 expertise to create an unprecedented fusion of flavors. Through his acclaimed DC restaurant 
                 Mélange and new ventures Doro Soul Food and Moya, he masterfully blends Ethiopian heritage 
