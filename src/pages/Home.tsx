@@ -92,7 +92,7 @@ const Home: React.FC = () => {
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} alignItems="center">
             <Box>
               <Image
-                src={images.chef.portrait}
+                src="/images/elias_melange.jpg"
                 alt="Chef Elias Taddesse"
                 rounded="lg"
                 shadow="lg"
