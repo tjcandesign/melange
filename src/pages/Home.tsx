@@ -60,8 +60,14 @@ const Home: React.FC = () => {
               Experience the unique fusion of Ethiopian flavors with modern American cuisine,
               crafted by Michelin-starred Chef Elias Taddesse
             </Text>
-            <Button size="lg" colorScheme="gold">
-              Make a Reservation
+            <Button
+              as={RouterLink}
+              to="/chef-elias"
+              size="lg"
+              colorScheme="gold"
+              variant="outline"
+            >
+              Learn More About Chef Elias
             </Button>
           </VStack>
         </Container>
