@@ -12,17 +12,20 @@ const Home: React.FC = () => {
     {
       name: "Mélange",
       description: "DC's acclaimed restaurant featuring Ethiopian-spiced gourmet burgers crafted with French culinary techniques",
-      image: "/images/burger.jpg"
+      image: "/images/burger.jpg",
+      logo: "/images/melange-logo.png"
     },
     {
       name: "Doro Soul Food",
       description: "Traditional American soul food infused with Ethiopian flavors, from Michelin-starred Chef Elias Taddesse",
-      image: "/images/chicken.jpg"
+      image: "/images/chicken.jpg",
+      logo: "/images/doro-logo.png"
     },
     {
       name: "Moya",
       description: "Ethiopian-inspired tacos and innovative fusion cuisine that bridges cultures through flavor",
-      image: images.moya.hero
+      image: images.moya.hero,
+      logo: "/images/moya-logo.png"
     }
   ];
 
@@ -89,6 +92,7 @@ const Home: React.FC = () => {
                 name={restaurant.name}
                 description={restaurant.description}
                 image={restaurant.image}
+                logo={restaurant.logo}
               />
             ))}
           </SimpleGrid>

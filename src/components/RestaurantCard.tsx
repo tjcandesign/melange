@@ -8,9 +8,10 @@ interface RestaurantCardProps {
   name: string;
   description: string;
   image: string;
+  logo: string;
 }
 
-const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, image }) => {
+const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, image, logo }) => {
   return (
     <MotionBox
       whileHover={{ y: -10 }}
@@ -20,13 +21,35 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, imag
       overflow="hidden"
       shadow="md"
     >
-      <Image
-        src={image}
-        alt={name}
-        h="200px"
-        w="100%"
-        objectFit="cover"
-      />
+      <Box position="relative" h="200px">
+        <Image
+          src={image}
+          alt={name}
+          h="100%"
+          w="100%"
+          objectFit="cover"
+          opacity={0.8}
+        />
+        <Box
+          position="absolute"
+          top="0"
+          left="0"
+          right="0"
+          bottom="0"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          p={4}
+        >
+          <Image
+            src={logo}
+            alt={`${name} logo`}
+            maxH="80%"
+            maxW="80%"
+            objectFit="contain"
+          />
+        </Box>
+      </Box>
       <Box p={6}>
         <Heading size="md" mb={3} fontFamily="heading">
           {name}
