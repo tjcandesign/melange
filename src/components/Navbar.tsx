@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
         <Stack spacing={4}>
           <Link as={RouterLink} to="/chef-elias">Chef Elias</Link>
           <Link as={RouterLink} to="/restaurants">Our Restaurants</Link>
-          <Link as={RouterLink} to="/combined-location">Combined Location</Link>
+
           <Link as={RouterLink} to="/press">Press Mentions</Link>
           <Button colorScheme="gold" w="full">
             Reservations

@@ -157,24 +157,6 @@ const Restaurants: React.FC = () => {
         </Container>
       </Box>
 
-      {/* Combined Location Section */}
-      <Box py={20} bg="gray.50">
-        <Container maxW="container.xl">
-          <VStack spacing={8} align="center">
-            <Heading size="xl" fontFamily="heading" textAlign="center">
-              Coming Soon: Our New Combined Location
-            </Heading>
-            <Text fontSize="lg" maxW="800px" textAlign="center">
-              Experience all three of our unique concepts under one roof. Our new location will 
-              feature a full-service bar and dining room, bringing together the best of Mélange, 
-              Doro Soul Food, and Moya in an exciting new space.
-            </Text>
-            <Button colorScheme="gold" size="lg">
-              Learn More
-            </Button>
-          </VStack>
-        </Container>
-      </Box>
     </Box>
   );
 };
