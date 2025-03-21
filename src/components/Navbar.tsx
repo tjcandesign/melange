@@ -45,22 +45,7 @@ const Navbar: React.FC = () => {
         >
           <Link as={RouterLink} to="/chef-elias" fontWeight="medium">Chef Elias</Link>
           
-          <Menu>
-            <MenuButton
-              as={Button}
-              rightIcon={<ChevronDownIcon />}
-              variant="ghost"
-              fontWeight="medium"
-            >
-              Our Restaurants
-            </MenuButton>
-            <MenuList>
-              <MenuItem as={RouterLink} to="/restaurants#melange">Mélange</MenuItem>
-              <MenuItem as={RouterLink} to="/restaurants#doro">Doro Soul Food</MenuItem>
-              <MenuItem as={RouterLink} to="/restaurants#moya">Moya</MenuItem>
-              <MenuItem as={RouterLink} to="/combined-location">Combined Location</MenuItem>
-            </MenuList>
-          </Menu>
+          <Link as={RouterLink} to="/restaurants" fontWeight="medium">Our Restaurants</Link>
 
           <Link as={RouterLink} to="/press" fontWeight="medium">Press Mentions</Link>
           <Button colorScheme="gold">

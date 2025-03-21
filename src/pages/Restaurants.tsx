@@ -42,7 +42,7 @@ const Restaurants: React.FC = () => {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src={images.melange.interior}
+                src="/images/burger.jpg"
                 alt="Mélange Restaurant Interior"
                 rounded="lg"
                 shadow="xl"
@@ -56,17 +56,13 @@ const Restaurants: React.FC = () => {
                 heritage with his Michelin-starred French training to create an unprecedented 
                 burger experience.
               </Text>
-              <SimpleGrid columns={2} spacing={8} w="100%">
-                <Box>
-                  <Text fontWeight="bold" mb={2}>Location</Text>
-                  <Text>Washington, DC</Text>
-                </Box>
-                <Box>
-                  <Text fontWeight="bold" mb={2}>Hours</Text>
-                  <Text>Tue-Sun: 11am-10pm</Text>
-                  <Text>Mon: Closed</Text>
-                </Box>
-              </SimpleGrid>
+              <Box>
+                <Text fontWeight="bold" mb={2}>Location</Text>
+                <Text>Washington, DC</Text>
+                <ChakraLink href="https://www.melangedc.com" isExternal color="brand.accent" mt={2} display="block">
+                  Visit Website
+                </ChakraLink>
+              </Box>
               <Button colorScheme="gold" size="lg">
                 Make a Reservation
               </Button>
@@ -91,16 +87,13 @@ const Restaurants: React.FC = () => {
               <ChakraLink href="https://www.dorosoulfood.com/" isExternal color="brand.accent">
                 Visit Website
               </ChakraLink>
-              <SimpleGrid columns={2} spacing={8} w="100%">
-                <Box>
-                  <Text fontWeight="bold" mb={2}>Location</Text>
-                  <Text>Washington, DC</Text>
-                </Box>
-                <Box>
-                  <Text fontWeight="bold" mb={2}>Hours</Text>
-                  <Text>Mon-Sun: 11am-9pm</Text>
-                </Box>
-              </SimpleGrid>
+              <Box>
+                <Text fontWeight="bold" mb={2}>Location</Text>
+                <Text>Washington, DC</Text>
+                <ChakraLink href="https://www.dorosoulfood.com" isExternal color="brand.accent" mt={2} display="block">
+                  Visit Website
+                </ChakraLink>
+              </Box>
               <Button colorScheme="gold" size="lg">
                 Order Online
               </Button>
@@ -113,7 +106,7 @@ const Restaurants: React.FC = () => {
               order={{ base: 1, md: 2 }}
             >
               <Image
-                src={images.doro.interior}
+                src="/images/melange-chicken.jpg"
                 alt="Doro Soul Food Interior"
                 rounded="lg"
                 shadow="xl"
@@ -136,7 +129,7 @@ const Restaurants: React.FC = () => {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src={images.moya.interior}
+                src="/images/melange-chicken.jpg"
                 alt="Moya Restaurant Interior"
                 rounded="lg"
                 shadow="xl"
@@ -149,17 +142,13 @@ const Restaurants: React.FC = () => {
                 Our creative tacos and fusion dishes showcase how traditional Ethiopian flavors 
                 can harmoniously blend with international culinary traditions.
               </Text>
-              <SimpleGrid columns={2} spacing={8} w="100%">
-                <Box>
-                  <Text fontWeight="bold" mb={2}>Location</Text>
-                  <Text>Washington, DC</Text>
-                </Box>
-                <Box>
-                  <Text fontWeight="bold" mb={2}>Hours</Text>
-                  <Text>Tue-Sun: 11am-9pm</Text>
-                  <Text>Mon: Closed</Text>
-                </Box>
-              </SimpleGrid>
+              <Box>
+                <Text fontWeight="bold" mb={2}>Location</Text>
+                <Text>Washington, DC</Text>
+                <ChakraLink href="https://www.moyaethiopiantacos.com" isExternal color="brand.accent" mt={2} display="block">
+                  Visit Website
+                </ChakraLink>
+              </Box>
               <Button colorScheme="gold" size="lg">
                 View Menu
               </Button>
