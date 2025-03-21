@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Text, Image } from '@chakra-ui/react';
+import { Box, Text, Image, VStack } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 const MotionBox = motion(Box);
@@ -20,30 +20,32 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo
       overflow="hidden"
       shadow="md"
     >
-      <Box
-        h="200px"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        bg="gray.50"
-        p={8}
-      >
-        <Image
-          src={logo}
-          alt={`${name} logo`}
-          maxH="100%"
-          maxW="100%"
-          objectFit="contain"
-        />
-      </Box>
-      <Box p={6}>
-        <Heading size="md" mb={3} fontFamily="heading">
-          {name}
-        </Heading>
-        <Text color="gray.600">
-          {description}
-        </Text>
-      </Box>
+      <VStack spacing={0} h="full">
+        <Box
+          flex={1}
+          w="full"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          bg="gray.50"
+          p={12}
+          borderBottom="1px"
+          borderColor="gray.100"
+        >
+          <Image
+            src={logo}
+            alt={`${name} logo`}
+            w="full"
+            h="full"
+            objectFit="contain"
+          />
+        </Box>
+        <Box p={6} bg="white" w="full">
+          <Text color="gray.600" fontSize="sm">
+            {description}
+          </Text>
+        </Box>
+      </VStack>
     </MotionBox>
   );
 };

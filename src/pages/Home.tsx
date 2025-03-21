@@ -76,13 +76,15 @@ const Home: React.FC = () => {
       {/* Restaurant Concepts Section */}
       <Box py={20} bg="gray.50">
         <Container maxW="container.xl">
-          <Heading textAlign="center" mb={12} fontFamily="heading">
-            Our Restaurant Concepts
-          </Heading>
-          <Text textAlign="center" fontSize="xl" mb={8} fontFamily="Inter">
-            Experience three unique culinary concepts that blend Ethiopian heritage with modern innovation
-          </Text>
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <VStack spacing={6} mb={16}>
+            <Heading textAlign="center" fontFamily="heading" size="2xl">
+              Our Restaurant Concepts
+            </Heading>
+            <Text textAlign="center" fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
+              Experience three unique culinary concepts that blend Ethiopian heritage with modern innovation
+            </Text>
+          </VStack>
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} maxW="container.xl" mx="auto">
             {restaurants.map((restaurant) => (
               <RestaurantCard
                 key={restaurant.name}
