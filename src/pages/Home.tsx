@@ -11,17 +11,17 @@ const Home: React.FC = () => {
   const restaurants = [
     {
       name: "Mélange",
-      description: "DC's acclaimed restaurant featuring Ethiopian-spiced gourmet burgers crafted with French culinary techniques",
+      description: "DC's acclaimed restaurant where Ethiopian spices meet French culinary precision in every handcrafted burger",
       logo: "/images/melange-logo.png"
     },
     {
       name: "Doro Soul Food",
-      description: "Traditional American soul food infused with Ethiopian flavors, from Michelin-starred Chef Elias Taddesse",
+      description: "Soul food reimagined through Ethiopian traditions, bringing warmth to every plate",
       logo: "/images/doro-logo.png"
     },
     {
       name: "Moya",
-      description: "Ethiopian-inspired tacos and innovative fusion cuisine that bridges cultures through flavor",
+      description: "Ethiopian flavors meet Mexican traditions, creating a fresh take on tacos",
       logo: "/images/moya-logo.png"
     }
   ];
@@ -54,11 +54,11 @@ const Home: React.FC = () => {
               size="4xl" 
               fontFamily="heading"
             >
-              Where Ethiopian Heritage Meets Culinary Innovation
+              Where Ethiopian Heritage Shapes Modern American Dining
             </Heading>
             <Text fontSize="xl" fontFamily="Inter">
-              Experience the unique fusion of Ethiopian flavors with modern American cuisine,
-              crafted by Michelin-starred Chef Elias Taddesse
+              From Ethiopia to DC, Michelin-starred Chef Elias Taddesse brings his heritage
+              and classical training to create memorable dining experiences
             </Text>
             <Button
               as={RouterLink}
@@ -81,7 +81,7 @@ const Home: React.FC = () => {
               Our Restaurant Concepts
             </Heading>
             <Text textAlign="center" fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
-              Experience three unique culinary concepts that blend Ethiopian heritage with modern innovation
+              Three distinct restaurants where Ethiopian traditions meet American favorites
             </Text>
           </VStack>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} maxW="container.xl" mx="auto">

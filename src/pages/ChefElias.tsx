@@ -52,18 +52,17 @@ const ChefElias: React.FC = () => {
             <VStack align="flex-start" spacing={8}>
               <Heading size="xl" fontFamily="heading">About Chef Elias</Heading>
               <Text fontSize="lg" lineHeight="tall">
-                Ethiopian-born, French trained, Michelin-starred Chef Elias Taddesse is a two-time 
-                restaurateur and a rising star in the Washington restaurant scene. Since launching 
-                Mélange two years ago, he has been named a semi-finalist for the James Beard 
-                Foundation's Emerging Chef of the Year 2023, a finalist for the Restaurant 
-                Association of Metropolitan Washington's RAMMYs Rising Culinary Star of the 
-                Year 2022, and Eater DC's Chef of the Year in 2021.
+                Born in Ethiopia and classically trained in France, Chef Elias Taddesse earned a Michelin star
+                before establishing his restaurants in Washington DC. His first venture, Mélange, opened in 2020,
+                earning him recognition as Eater DC's Chef of the Year in 2021. His continued excellence led to
+                a James Beard Foundation's Emerging Chef of the Year semi-finalist nomination in 2023 and
+                a RAMMYs Rising Culinary Star of the Year finalist position in 2022.
               </Text>
               <Text fontSize="lg" lineHeight="tall">
-                From his time studying under legendary chefs in France, to receiving a Michelin 
-                star as head chef at Caviar Russe in New York City, to opening his own concept, 
-                Mélange, Elias has always used food to delight people and tell stories with 
-                every ingredient.
+                Chef Elias refined his craft under renowned chefs in France before earning a Michelin
+                star as head chef at Caviar Russe in New York City. At Mélange, he continues this
+                dedication to excellence, crafting dishes that honor both his Ethiopian heritage and
+                classical training.
               </Text>
             </VStack>
             <MotionBox
@@ -104,13 +103,11 @@ const ChefElias: React.FC = () => {
             <VStack align="flex-start" spacing={8} order={{ base: 1, md: 2 }}>
               <Heading size="xl" fontFamily="heading">Culinary Journey</Heading>
               <Text fontSize="lg" lineHeight="tall">
-                Chef Elias started his first DC pop-up in 2016 at Neal Place Tap & Garden, 
-                a summer project by Mixtress Gina Chersevani. Later that year, he started a 
-                burger pop-up called Salt n' Pepper Burgers at Harvey's Market butcher shop 
-                in Union Market. In January 2017, Elias would go on to move his pop-up to 
-                Wet Dog Tavern under the new name Mélange, which became a brick and mortar 
-                restaurant in 2020. He opened his most recent restaurant, Doro Soul Food, 
-                in October 2022.
+                Chef Elias's DC journey began in 2016 with a pop-up at Neal Place Tap & Garden.
+                His passion for crafting the perfect burger led to Salt n' Pepper Burgers at
+                Harvey's Market in Union Market. This evolved into Mélange at Wet Dog Tavern
+                before finding its permanent home in 2020. Building on this success, he opened
+                Doro Soul Food in 2022, bringing Ethiopian warmth to American soul food classics.
               </Text>
             </VStack>
           </SimpleGrid>
