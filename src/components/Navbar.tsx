@@ -62,12 +62,18 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Content */}
       <Box
-        display={{ base: isOpen ? 'block' : 'none', md: 'none' }}
-        pb={4}
+        position="fixed"
+        top="96px"
+        left={0}
+        right={0}
+        bottom={0}
+        display={{ base: isOpen ? 'flex' : 'none', md: 'none' }}
         bg="brand.blue"
-        mt={2}
+        alignItems="center"
+        justifyContent="center"
+        zIndex={20}
       >
-        <Stack spacing={6} p={4}>
+        <Stack spacing={12} p={4} align="center">
           <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
           <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
