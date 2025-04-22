@@ -51,10 +51,7 @@ const Footer: React.FC = () => {
 
         <HStack justify="space-between" fontSize="sm">
           <Text fontFamily="mono">© {new Date().getFullYear()} Melange Foods, Inc. All rights reserved.</Text>
-          <HStack spacing={4}>
-            <Link href="#" fontFamily="mono">Privacy Policy</Link>
-            <Link href="#" fontFamily="mono">Terms of Service</Link>
-          </HStack>
+          <Text fontFamily="mono">Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Tj Cichecki of Workhorse Collective</Link></Text>
         </HStack>
       </Container>
     </Box>
