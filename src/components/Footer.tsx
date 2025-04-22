@@ -38,7 +38,6 @@ const Footer: React.FC = () => {
           <Stack spacing={6}>
             <Text fontWeight="bold" fontFamily="mono">Contact</Text>
             <VStack align="flex-start" spacing={3}>
-              <Text fontFamily="mono">General Inquiries:</Text>
               <Text fontFamily="mono">info@eathiopianfoods.com</Text>
               <Text fontFamily="mono">202-555-0123</Text>
               <Text fontFamily="mono" pt={4}>Press Contact:</Text>
@@ -51,7 +50,7 @@ const Footer: React.FC = () => {
 
         <HStack justify="space-between" fontSize="sm">
           <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} Melange Foods, Inc. All rights reserved.</Text>
-          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Tj Cichecki of Workhorse Collective</Link></Text>
+          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase" opacity={0.5}>Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Workhorse Collective</Link></Text>
         </HStack>
       </Container>
     </Box>

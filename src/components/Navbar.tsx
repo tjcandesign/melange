@@ -37,7 +37,8 @@ const Navbar: React.FC = () => {
         <IconButton
           display={{ base: 'flex', md: 'none' }}
           onClick={onToggle}
-          icon={<HamburgerIcon />}
+          icon={<HamburgerIcon boxSize={8} />}
+          color="brand.blue"
           variant="ghost"
           aria-label="Toggle Navigation"
         />
@@ -54,9 +55,6 @@ const Navbar: React.FC = () => {
           <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
           <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
-          <Button colorScheme="gold">
-            Reservations
-          </Button>
         </Stack>
       </Flex>
 
@@ -64,15 +62,14 @@ const Navbar: React.FC = () => {
       <Box
         display={{ base: isOpen ? 'block' : 'none', md: 'none' }}
         pb={4}
+        bg="gray.50"
+        mt={2}
       >
-        <Stack spacing={4}>
+        <Stack spacing={6} p={4}>
           <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
           <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
           <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
-          <Button colorScheme="gold" w="full">
-            Reservations
-          </Button>
         </Stack>
       </Box>
     </Box>

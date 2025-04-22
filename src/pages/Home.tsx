@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           bottom="0"
           zIndex="-2"
           bgImage="url('/images/Elias_hero.jpg')"
-          bgPosition="center"
+          bgPosition={{ base: "center 30%", md: "center" }}
           bgSize="cover"
         />
         {/* Dark Overlay */}
@@ -88,7 +88,7 @@ const Home: React.FC = () => {
           transformOrigin="bottom right"
         />
         <Container maxW="container.xl" h="100%" display="flex" alignItems="center">
-          <VStack spacing={6} align="flex-start" maxW="600px">
+          <VStack spacing={{ base: 8, md: 6 }} align="flex-start" maxW="600px">
             <Heading 
               as="h1" 
               size="4xl" 
@@ -109,6 +109,7 @@ const Home: React.FC = () => {
               fontFamily="mono"
               textTransform="uppercase"
               fontWeight="bold"
+              letterSpacing="wide"
             >
               Learn More About Chef Elias
             </Button>
@@ -164,8 +165,13 @@ const Home: React.FC = () => {
               <Button
                 as={RouterLink}
                 to="/chef-elias"
-                variant="outline"
+                variant="solid"
                 colorScheme="gold"
+                fontFamily="mono"
+                textTransform="uppercase"
+                fontWeight="bold"
+                letterSpacing="wide"
+                borderRadius="full"
               >
                 Read Full Bio
               </Button>
