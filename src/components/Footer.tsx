@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Stack, Text, Link, SimpleGrid, VStack, HStack, Divider } from '@chakra-ui/react';
+import { Box, Container, Stack, Text, Link, SimpleGrid, VStack, HStack, Divider, Image } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -49,7 +49,10 @@ const Footer: React.FC = () => {
         <Divider my={8} borderColor="whiteAlpha.400" />
 
         <HStack justify="space-between" fontSize="sm">
-          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} Melange Foods, Inc. All rights reserved.</Text>
+          <HStack spacing={2}>
+            <Box as="img" src="/images/SVG/logo.svg" height="40px" filter="brightness(0) invert(1)" />
+            <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} All rights reserved.</Text>
+          </HStack>
           <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase" opacity={0.5}>Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Workhorse Collective</Link></Text>
         </HStack>
       </Container>
