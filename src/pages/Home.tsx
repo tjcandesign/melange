@@ -128,7 +128,7 @@ const Home: React.FC = () => {
               Three distinct restaurants where Ethiopian traditions meet American favorites
             </Text>
           </VStack>
-          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} maxW="container.xl" mx="auto">
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full" alignItems="stretch">
             {restaurants.map((restaurant) => (
               <RestaurantCard
                 key={restaurant.name}

@@ -22,22 +22,23 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo
     >
       <VStack spacing={0} h="full">
         <Box
-          flex={1}
+          h="200px"
           w="full"
           display="flex"
           alignItems="center"
           justifyContent="center"
           bg="gray.50"
-          p={12}
+          p={6}
           borderBottom="1px"
           borderColor="gray.100"
         >
           <Image
             src={logo}
             alt={`${name} logo`}
+            maxH="100%"
             w="full"
-            h="full"
             objectFit="contain"
+            px={4}
           />
         </Box>
         <Box p={6} bg="white" w="full">
