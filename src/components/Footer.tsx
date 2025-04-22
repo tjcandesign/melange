@@ -41,17 +41,7 @@ const Footer: React.FC = () => {
               <Text fontFamily="mono">General Inquiries:</Text>
               <Text fontFamily="mono">info@eathiopianfoods.com</Text>
               <Text fontFamily="mono">202-555-0123</Text>
-              <Text fontFamily="mono" pt={4}>Locations:</Text>
-              <Text fontFamily="mono" fontSize="sm">Mélange</Text>
-              <Text fontFamily="mono" fontSize="sm">1201 K Street NW</Text>
-              <Text fontFamily="mono" fontSize="sm">Washington, DC 20005</Text>
-              <Text fontFamily="mono" fontSize="sm" pt={2}>Doro Soul Food</Text>
-              <Text fontFamily="mono" fontSize="sm">1451 Maryland Ave NE</Text>
-              <Text fontFamily="mono" fontSize="sm">Washington, DC 20002</Text>
-              <Text fontFamily="mono" fontSize="sm" pt={2}>Moya</Text>
-              <Text fontFamily="mono" fontSize="sm">1817 Columbia Rd NW</Text>
-              <Text fontFamily="mono" fontSize="sm">Washington, DC 20009</Text>
-              <Text fontFamily="mono" fontSize="sm" pt={4}>Press Contact:</Text>
+              <Text fontFamily="mono" pt={4}>Press Contact:</Text>
               <Text fontFamily="mono">press@eathiopianfoods.com</Text>
             </VStack>
           </Stack>
