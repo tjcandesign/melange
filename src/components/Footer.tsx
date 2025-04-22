@@ -50,8 +50,8 @@ const Footer: React.FC = () => {
         <Divider my={8} borderColor="whiteAlpha.400" />
 
         <HStack justify="space-between" fontSize="sm">
-          <Text fontFamily="mono">© {new Date().getFullYear()} Melange Foods, Inc. All rights reserved.</Text>
-          <Text fontFamily="mono">Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Tj Cichecki of Workhorse Collective</Link></Text>
+          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} Melange Foods, Inc. All rights reserved.</Text>
+          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Tj Cichecki of Workhorse Collective</Link></Text>
         </HStack>
       </Container>
     </Box>

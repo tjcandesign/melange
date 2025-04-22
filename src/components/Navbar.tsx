@@ -19,8 +19,16 @@ const Navbar: React.FC = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box bg="white" px={4} boxShadow="sm" position="sticky" top={0} zIndex="sticky">
-      <Flex h={16} alignItems="center" justifyContent="space-between">
+    <Box 
+      bg="rgba(255, 255, 255, 0.95)" 
+      px={4} 
+      boxShadow="sm" 
+      position="sticky" 
+      top={0} 
+      zIndex="sticky"
+      backdropFilter="blur(5px)"
+    >
+      <Flex h={24} alignItems="center" justifyContent="space-between">
         <RouterLink to="/">
           <Box as="img" src="/images/SVG/logo.svg" height="60px" />
         </RouterLink>
@@ -37,15 +45,15 @@ const Navbar: React.FC = () => {
         {/* Desktop Menu */}
         <Stack
           direction="row"
-          spacing={8}
+          spacing={12}
           align="center"
           display={{ base: 'none', md: 'flex' }}
         >
-          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg">Chef Elias Taddesse</Link>
+          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
           
-          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg">Our Restaurants</Link>
+          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
-          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg">Press Mentions</Link>
+          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
           <Button colorScheme="gold">
             Reservations
           </Button>
@@ -58,10 +66,10 @@ const Navbar: React.FC = () => {
         pb={4}
       >
         <Stack spacing={4}>
-          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg">Chef Elias Taddesse</Link>
-          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg">Our Restaurants</Link>
+          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
+          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
-          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg">Press Mentions</Link>
+          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
           <Button colorScheme="gold" w="full">
             Reservations
           </Button>

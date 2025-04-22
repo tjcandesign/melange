@@ -46,6 +46,16 @@ const Home: React.FC = () => {
           bgPosition="center"
           bgSize="cover"
         />
+        {/* Dark Overlay */}
+        <Box
+          position="absolute"
+          top="0"
+          left="0"
+          right="0"
+          bottom="0"
+          bg="rgba(0, 0, 0, 0.4)"
+          zIndex="-1"
+        />
         {/* Creative Overlay */}
         <Box
           position="absolute"
@@ -96,6 +106,9 @@ const Home: React.FC = () => {
               size="lg"
               colorScheme="gold"
               variant="outline"
+              fontFamily="mono"
+              textTransform="uppercase"
+              fontWeight="bold"
             >
               Learn More About Chef Elias
             </Button>
