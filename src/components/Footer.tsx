@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
           <Stack spacing={6}>
             <Text fontSize="lg" fontFamily="heading" fontWeight="bold">
-              Eathiopian Foods
+              Melange Foods, Inc.
             </Text>
             <Text fontSize="sm">
               Where Ethiopian heritage meets culinary innovation, under the vision of
@@ -18,38 +18,41 @@ const Footer: React.FC = () => {
           </Stack>
 
           <Stack spacing={6}>
-            <Text fontWeight="bold">Our Restaurants</Text>
+            <Text fontWeight="bold" fontFamily="mono">Our Restaurants</Text>
             <VStack align="flex-start" spacing={3}>
-              <Link as={RouterLink} to="/restaurants#melange">Mélange</Link>
-              <Link as={RouterLink} to="/restaurants#doro">Doro Soul Food</Link>
-              <Link as={RouterLink} to="/restaurants#moya">Moya</Link>
-              <Divider borderColor="whiteAlpha.400" />
-              <Link as={RouterLink} to="/combined-location">
-                <Text fontWeight="medium">New Combined Location</Text>
-                <Text fontSize="sm">Coming Soon</Text>
-              </Link>
+              <Link as={RouterLink} to="/restaurants#melange" fontFamily="mono">Mélange</Link>
+              <Link as={RouterLink} to="/restaurants#doro" fontFamily="mono">Doro Soul Food</Link>
+              <Link as={RouterLink} to="/restaurants#moya" fontFamily="mono">Moya</Link>
             </VStack>
           </Stack>
 
           <Stack spacing={6}>
-            <Text fontWeight="bold">Company</Text>
+            <Text fontWeight="bold" fontFamily="mono">Company</Text>
             <VStack align="flex-start" spacing={3}>
-              <Link as={RouterLink} to="/chef-elias">Chef Elias</Link>
-              <Link as={RouterLink} to="/press">Press</Link>
-              <Link as={RouterLink} to="/media-kit">Media Kit</Link>
-              <Link href="https://www.dorosoulfood.com/" isExternal>Doro Soul Food Website</Link>
+              <Link as={RouterLink} to="/chef-elias" fontFamily="mono">Chef Elias</Link>
+              <Link as={RouterLink} to="/press" fontFamily="mono">Press</Link>
+              <Link as={RouterLink} to="/media-kit" fontFamily="mono">Media Kit</Link>
             </VStack>
           </Stack>
 
           <Stack spacing={6}>
-            <Text fontWeight="bold">Contact</Text>
+            <Text fontWeight="bold" fontFamily="mono">Contact</Text>
             <VStack align="flex-start" spacing={3}>
-              <Text>General Inquiries:</Text>
-              <Text>info@eathiopianfoods.com</Text>
-              <Text>202-555-0123</Text>
-              <Text>Washington, DC</Text>
-              <Text fontSize="sm" pt={2}>Press Contact:</Text>
-              <Text>press@eathiopianfoods.com</Text>
+              <Text fontFamily="mono">General Inquiries:</Text>
+              <Text fontFamily="mono">info@eathiopianfoods.com</Text>
+              <Text fontFamily="mono">202-555-0123</Text>
+              <Text fontFamily="mono" pt={4}>Locations:</Text>
+              <Text fontFamily="mono" fontSize="sm">Mélange</Text>
+              <Text fontFamily="mono" fontSize="sm">1201 K Street NW</Text>
+              <Text fontFamily="mono" fontSize="sm">Washington, DC 20005</Text>
+              <Text fontFamily="mono" fontSize="sm" pt={2}>Doro Soul Food</Text>
+              <Text fontFamily="mono" fontSize="sm">1451 Maryland Ave NE</Text>
+              <Text fontFamily="mono" fontSize="sm">Washington, DC 20002</Text>
+              <Text fontFamily="mono" fontSize="sm" pt={2}>Moya</Text>
+              <Text fontFamily="mono" fontSize="sm">1817 Columbia Rd NW</Text>
+              <Text fontFamily="mono" fontSize="sm">Washington, DC 20009</Text>
+              <Text fontFamily="mono" fontSize="sm" pt={4}>Press Contact:</Text>
+              <Text fontFamily="mono">press@eathiopianfoods.com</Text>
             </VStack>
           </Stack>
         </SimpleGrid>
@@ -57,10 +60,10 @@ const Footer: React.FC = () => {
         <Divider my={8} borderColor="whiteAlpha.400" />
 
         <HStack justify="space-between" fontSize="sm">
-          <Text>© {new Date().getFullYear()} Eathiopian Foods. All rights reserved.</Text>
+          <Text fontFamily="mono">© {new Date().getFullYear()} Melange Foods, Inc. All rights reserved.</Text>
           <HStack spacing={4}>
-            <Link href="#">Privacy Policy</Link>
-            <Link href="#">Terms of Service</Link>
+            <Link href="#" fontFamily="mono">Privacy Policy</Link>
+            <Link href="#" fontFamily="mono">Terms of Service</Link>
           </HStack>
         </HStack>
       </Container>

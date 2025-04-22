@@ -22,9 +22,12 @@ const Navbar: React.FC = () => {
     <Box bg="white" px={4} boxShadow="sm" position="sticky" top={0} zIndex="sticky">
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <RouterLink to="/">
-          <Box fontSize="xl" fontFamily="heading" fontWeight="bold">
-            Eathiopian Foods
-          </Box>
+          <Flex alignItems="center">
+            <Box as="img" src="/images/SVG/logo.svg" height="40px" mr={3} />
+            <Box fontSize="xl" fontFamily="heading" fontWeight="bold">
+              Melange Foods, Inc.
+            </Box>
+          </Flex>
         </RouterLink>
 
         {/* Mobile Menu */}
@@ -43,11 +46,11 @@ const Navbar: React.FC = () => {
           align="center"
           display={{ base: 'none', md: 'flex' }}
         >
-          <Link as={RouterLink} to="/chef-elias" fontWeight="medium">Chef Elias</Link>
+          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="medium">Chef Elias</Link>
           
-          <Link as={RouterLink} to="/restaurants" fontWeight="medium">Our Restaurants</Link>
+          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="medium">Our Restaurants</Link>
 
-          <Link as={RouterLink} to="/press" fontWeight="medium">Press Mentions</Link>
+          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="medium">Press Mentions</Link>
           <Button colorScheme="gold">
             Reservations
           </Button>
@@ -60,10 +63,10 @@ const Navbar: React.FC = () => {
         pb={4}
       >
         <Stack spacing={4}>
-          <Link as={RouterLink} to="/chef-elias">Chef Elias</Link>
-          <Link as={RouterLink} to="/restaurants">Our Restaurants</Link>
+          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue">Chef Elias</Link>
+          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue">Our Restaurants</Link>
 
-          <Link as={RouterLink} to="/press">Press Mentions</Link>
+          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue">Press Mentions</Link>
           <Button colorScheme="gold" w="full">
             Reservations
           </Button>

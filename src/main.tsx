@@ -6,13 +6,15 @@ import App from './App'
 const theme = extendTheme({
   colors: {
     brand: {
-      primary: '#2D3748',
+      primary: '#225d94',
       accent: '#D69E2E',
+      blue: '#225d94'
     },
   },
   fonts: {
     heading: '"Playfair Display", serif',
     body: '"Open Sans", sans-serif',
+    mono: '"Courier New", monospace',
   },
 })
 

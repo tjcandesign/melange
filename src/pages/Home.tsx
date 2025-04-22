@@ -32,8 +32,8 @@ const Home: React.FC = () => {
       <Box 
         h="90vh" 
         position="relative" 
-        bgGradient="linear(to-b, rgba(0,0,0,0.7), rgba(0,0,0,0.5))"
         color="white"
+        overflow="hidden"
       >
         <Box
           position="absolute"
@@ -41,11 +41,41 @@ const Home: React.FC = () => {
           left="0"
           right="0"
           bottom="0"
-          zIndex="-1"
+          zIndex="-2"
           bgImage="url('/images/Elias_hero.jpg')"
           bgPosition="center"
           bgSize="cover"
-          filter="brightness(0.6)"
+        />
+        {/* Creative Overlay */}
+        <Box
+          position="absolute"
+          top="0"
+          left="0"
+          right="0"
+          bottom="0"
+          zIndex="-1"
+          bgGradient={`linear(to-br, 
+            rgba(34, 93, 148, 0.85), 
+            rgba(34, 93, 148, 0.4), 
+            rgba(34, 93, 148, 0.7)
+          )`}
+          transform="skewY(-12deg)"
+          transformOrigin="top left"
+        />
+        <Box
+          position="absolute"
+          top="0"
+          left="-10%"
+          right="-10%"
+          bottom="0"
+          zIndex="-1"
+          bgGradient={`linear(to-l, 
+            rgba(34, 93, 148, 0.3), 
+            rgba(34, 93, 148, 0.6), 
+            rgba(34, 93, 148, 0.2)
+          )`}
+          transform="skewX(-12deg)"
+          transformOrigin="bottom right"
         />
         <Container maxW="container.xl" h="100%" display="flex" alignItems="center">
           <VStack spacing={6} align="flex-start" maxW="600px">
