@@ -2,6 +2,7 @@ import React from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import {
   Box,
+  Container,
   Flex,
   Link,
   Stack,
@@ -20,17 +21,17 @@ const Navbar: React.FC = () => {
 
   return (
     <Box 
-      bg="rgba(255, 255, 255, 0.95)" 
-      px={4} 
-      boxShadow="sm" 
+      bg="brand.blue" 
       position="sticky" 
       top={0} 
       zIndex="sticky"
       backdropFilter="blur(5px)"
     >
-      <Flex h={24} alignItems="center" justifyContent="space-between">
+      <Container maxW="container.xl">
+        <Flex h={24} alignItems="center" justifyContent="space-between">
+
         <RouterLink to="/">
-          <Box as="img" src="/images/SVG/logo.svg" height="60px" />
+          <Box as="img" src="/images/SVG/logo.svg" height="60px" filter="brightness(0) invert(1)" />
         </RouterLink>
 
         {/* Mobile Menu */}
@@ -38,7 +39,7 @@ const Navbar: React.FC = () => {
           display={{ base: 'flex', md: 'none' }}
           onClick={onToggle}
           icon={<HamburgerIcon boxSize={8} />}
-          color="brand.blue"
+          color="white"
           variant="ghost"
           aria-label="Toggle Navigation"
         />
@@ -50,26 +51,27 @@ const Navbar: React.FC = () => {
           align="center"
           display={{ base: 'none', md: 'flex' }}
         >
-          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
+          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
           
-          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
+          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
-          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
+          <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
         </Stack>
-      </Flex>
+        </Flex>
+      </Container>
 
       {/* Mobile Menu Content */}
       <Box
         display={{ base: isOpen ? 'block' : 'none', md: 'none' }}
         pb={4}
-        bg="gray.50"
+        bg="brand.blue"
         mt={2}
       >
         <Stack spacing={6} p={4}>
-          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
-          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
+          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
+          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
 
-          <Link as={RouterLink} to="/press" fontFamily="mono" color="brand.blue" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
+          <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
         </Stack>
       </Box>
     </Box>

@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           left="0"
           right="0"
           bottom="0"
-          bg="rgba(0, 0, 0, 0.4)"
+          bg="rgba(0, 0, 0, 0.65)"
           zIndex="-1"
         />
         {/* Creative Overlay */}
