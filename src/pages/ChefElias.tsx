@@ -46,34 +46,45 @@ const ChefElias: React.FC = () => {
       {/* Biography Section */}
       <Box py={20}>
         <Container maxW="container.xl">
-          <VStack spacing={12} align="flex-start" maxW="container.lg">
-            <Box>
-              <Heading as="h2" size="xl" mb={4}>
+          <VStack spacing={12} align="flex-start" w="full">
+            <Box w="full">
+              <Heading as="h2" size="xl" mb={8}>
                 Career Highlights
               </Heading>
-              <VStack spacing={4} align="flex-start">
-                <Text fontSize="lg">
-                  Chef Elias's distinguished career includes earning a Michelin star as head chef at Caviar Russe in New York City.
-                  His entrepreneurial journey in DC began with a pop-up at Neal Place Tap & Garden in 2016, followed by the
-                  successful Salt n' Pepper Burgers pop-up at Harvey's Market.
-                </Text>
-                <Text fontSize="lg">
-                  In 2020, he opened Mélange, DC's acclaimed restaurant featuring Ethiopian-spiced gourmet burgers with French techniques.
-                  Following its success, he launched Doro Soul Food in October 2022, offering traditional American soul food infused with
-                  Ethiopian flavors. His latest venture, Moya, brings Ethiopian-inspired tacos and fusion cuisine to the DC food scene.
-                </Text>
-              </VStack>
-            </Box>
-
-            <Box>
-              <Heading as="h2" size="xl" mb={4}>
-                Culinary Philosophy
-              </Heading>
-              <Text fontSize="lg">
-                Chef Elias uses food to delight people and tell stories with every ingredient. His unique approach combines
-                his Ethiopian heritage with French culinary techniques, creating innovative fusion cuisine that bridges cultures
-                and delivers memorable dining experiences across his three distinct restaurant concepts.
-              </Text>
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full" alignItems="start">
+                <VStack spacing={4} align="flex-start">
+                  <Text fontSize="lg">
+                    Chef Elias's distinguished career includes earning a Michelin star as head chef at Caviar Russe in New York City.
+                    His entrepreneurial journey in DC began with a pop-up at Neal Place Tap & Garden in 2016, followed by the
+                    successful Salt n' Pepper Burgers pop-up at Harvey's Market.
+                  </Text>
+                  <Text fontSize="lg">
+                    In 2020, he opened Mélange, DC's acclaimed restaurant featuring Ethiopian-spiced gourmet burgers with French techniques.
+                    Following its success, he launched Doro Soul Food in October 2022, offering traditional American soul food infused with
+                    Ethiopian flavors. His latest venture, Moya, brings Ethiopian-inspired tacos and fusion cuisine to the DC food scene.
+                  </Text>
+                </VStack>
+                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+                  <Image
+                    src="/images/elias_melange.jpg"
+                    alt="Chef Elias at Mélange"
+                    rounded="lg"
+                    shadow="lg"
+                    w="full"
+                    h="300px"
+                    objectFit="cover"
+                  />
+                  <Image
+                    src="/images/Chef-Elias-Taddesse.jpg"
+                    alt="Chef Elias cooking"
+                    rounded="lg"
+                    shadow="lg"
+                    w="full"
+                    h="300px"
+                    objectFit="cover"
+                  />
+                </SimpleGrid>
+              </SimpleGrid>
             </Box>
           </VStack>
         </Container>
