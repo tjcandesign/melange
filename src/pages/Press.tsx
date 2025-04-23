@@ -144,39 +144,18 @@ const Press: React.FC = () => {
       {/* Press Contact Section */}
       <Box py={20} bg="gray.50">
         <Container maxW="container.xl">
-          <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
-            <VStack align="flex-start" spacing={6}>
-              <Heading size="xl" fontFamily="heading">Press Inquiries</Heading>
-              <Text fontSize="lg">
-                For press inquiries, interviews, or additional information about our 
-                restaurants and Chef Elias Taddesse, please contact our media relations team.
-              </Text>
-              <VStack align="flex-start" spacing={2}>
-                <Text fontWeight="bold">Media Contact:</Text>
-                <Text>press@eathiopianfoods.com</Text>
-                <Text>202-555-0123</Text>
-              </VStack>
+          <VStack align="flex-start" spacing={6} maxW="container.md">
+            <Heading size="xl" fontFamily="heading">Press Inquiries</Heading>
+            <Text fontSize="lg">
+              For press inquiries, interviews, or additional information about our 
+              restaurants and Chef Elias Taddesse, please contact our media relations team.
+            </Text>
+            <VStack align="flex-start" spacing={2}>
+              <Text fontWeight="bold">Media Contact:</Text>
+              <Text>press@eathiopianfoods.com</Text>
+              <Text>202-555-0123</Text>
             </VStack>
-            <Box>
-              <VStack align="flex-start" spacing={6}>
-                <Heading size="xl" fontFamily="heading">Quick Facts</Heading>
-                <VStack align="flex-start" spacing={4}>
-                  <Box>
-                    <Text fontWeight="bold">Chef Elias Taddesse</Text>
-                    <Text>Ethiopian-born, French-trained Michelin-starred chef</Text>
-                  </Box>
-                  <Box>
-                    <Text fontWeight="bold">Restaurant Concepts</Text>
-                    <Text>Mélange • Doro Soul Food • Moya</Text>
-                  </Box>
-                  <Box>
-                    <Text fontWeight="bold">Cuisine</Text>
-                    <Text>Ethiopian fusion, combining traditional flavors with modern American and international cuisines</Text>
-                  </Box>
-                </VStack>
-              </VStack>
-            </Box>
-          </SimpleGrid>
+          </VStack>
         </Container>
       </Box>
     </Box>
