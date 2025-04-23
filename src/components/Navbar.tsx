@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
           >
             <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Chef Elias Taddesse</Link>
             <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Our Restaurants</Link>
-            <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
+            <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
           </Stack>
         </Flex>
       </Container>
@@ -172,7 +172,7 @@ const Navbar: React.FC = () => {
               </VStack>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
-              <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
+              <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
             </Box>
           </VStack>
         </Container>
