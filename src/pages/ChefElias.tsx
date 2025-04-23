@@ -157,7 +157,7 @@ const ChefElias: React.FC = () => {
                         <HStack flexWrap="wrap">
                           <Text>- Salt n' Pepper Burgers Pop-up</Text>
                           <Icon as={HiLocationMarker} color="brand.primary" />
-                          <Text color="brand.primary">Harvey's Market, Union Market</Text>
+                          <Text color="brand.primary">Harvey's Market</Text>
                         </HStack>
                       </HStack>
                     </Box>
@@ -175,7 +175,7 @@ const ChefElias: React.FC = () => {
                       <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2017</Text>
                         <HStack flexWrap="wrap">
-                          <Text>- Mélange Opens Permanent pop-up at Wet Dog Tavern</Text>
+                          <Text>- Mélange Opens at Wet Dog Tavern</Text>
                           <Icon as={HiLocationMarker} color="brand.primary" />
                           <Text color="brand.primary">U Street</Text>
                         </HStack>
