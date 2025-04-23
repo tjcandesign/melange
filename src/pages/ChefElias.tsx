@@ -24,7 +24,7 @@ const ChefElias: React.FC = () => {
           right="0"
           bottom="0"
           zIndex="-1"
-          bgImage="url('/images/hero.jpg')"
+          bgImage="url('/images/Elias_hero.jpg')"
           bgPosition="center"
           bgSize="cover"
           filter="brightness(0.6)"
