@@ -8,10 +8,9 @@ interface RestaurantCardProps {
   name: string;
   description: string;
   image: string;
-  logo: string;
 }
 
-const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, image, logo }) => {
+const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, image }) => {
   return (
     <Box
       bg="white"
@@ -44,24 +43,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, imag
             />
           </Box>
         </Box>
-        <Box
-          h="100px"
-          w="full"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          bg="gray.50"
-          p={6}
-        >
-          <Image
-            src={logo}
-            alt={`${name} logo`}
-            maxH="100%"
-            w="full"
-            objectFit="contain"
-            px={4}
-          />
-        </Box>
+
         <Box p={6} bg="white" w="full">
           <Text color="gray.600" fontSize="sm">
             {description}

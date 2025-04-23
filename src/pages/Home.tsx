@@ -12,20 +12,17 @@ const Home: React.FC = () => {
     {
       name: "Mélange",
       description: "DC's acclaimed restaurant where Ethiopian spices meet French culinary precision in every handcrafted burger",
-      image: "/images/Melange-card.png",
-      logo: "/images/melange-logo.png"
+      image: "/images/Melange-card.png"
     },
     {
       name: "Doro Soul Food",
       description: "Soul food reimagined through Ethiopian traditions, bringing warmth to every plate",
-      image: "/images/Doro-card.png",
-      logo: "/images/doro-logo.png"
+      image: "/images/Doro-card.png"
     },
     {
       name: "Moya",
       description: "Ethiopian flavors meet Mexican traditions, creating a fresh take on tacos",
-      image: "/images/Moya-card.png",
-      logo: "/images/moya-logo.png"
+      image: "/images/Moya-card.png"
     }
   ];
 
@@ -45,11 +42,16 @@ const Home: React.FC = () => {
           right="0"
           bottom="0"
           zIndex="-2"
-          bgImage="url('/images/Elias_hero.jpg')"
-          bgPosition="center"
-          bgAttachment="scroll"
-          bgSize="cover"
-        />
+          overflow="hidden"
+        >
+          <Image
+            src="/images/Elias_hero.jpg"
+            alt="Chef Elias"
+            objectFit="cover"
+            w="100%"
+            h="100%"
+          />
+        </Box>
         {/* Dark Overlay */}
         <Box
           position="absolute"
@@ -72,7 +74,7 @@ const Home: React.FC = () => {
             }
           }}
         />
-        {/* Creative Overlay */}
+        {/* Overlay */}
         <Box
           position="absolute"
           top="0"
@@ -81,39 +83,21 @@ const Home: React.FC = () => {
           bottom="0"
           zIndex="-1"
           bgGradient={`linear(to-br, 
-            rgba(34, 93, 148, 0.85), 
-            rgba(34, 93, 148, 0.4), 
-            rgba(34, 93, 148, 0.7)
+            rgba(34, 93, 148, 0.8),
+            rgba(34, 93, 148, 0.6)
           )`}
-          transform="skewY(-12deg)"
-          transformOrigin="top left"
-        />
-        <Box
-          position="absolute"
-          top="0"
-          left="-10%"
-          right="-10%"
-          bottom="0"
-          zIndex="-1"
-          bgGradient={`linear(to-l, 
-            rgba(34, 93, 148, 0.3), 
-            rgba(34, 93, 148, 0.6), 
-            rgba(34, 93, 148, 0.2)
-          )`}
-          transform="skewX(-12deg)"
-          transformOrigin="bottom right"
         />
         <Container maxW="container.xl" h="100%" display="flex" alignItems="center">
           <VStack spacing={{ base: 12, md: 10 }} align="flex-start" maxW="800px">
             <Heading
               as="h1"
-              fontSize={{ base: '2xl', sm: '4xl', md: '5xl', lg: 'var(--chakra-fontSizes-6xl)' }}
+              fontSize={{ base: '4xl', sm: '4xl', md: '5xl', lg: 'var(--chakra-fontSizes-6xl)' }}
               color="white"
               fontFamily="heading"
             >
               Where Ethiopian Heritage Shapes Modern American Dining
             </Heading>
-            <Text fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }} fontFamily="Inter">
+            <Text fontSize={{ base: 'xl', sm: 'xl', md: '2xl' }} fontFamily="Inter">
               From Ethiopia to DC, Michelin-starred Chef Elias Taddesse brings his heritage
               and classical training to create memorable dining experiences
             </Text>
@@ -152,7 +136,7 @@ const Home: React.FC = () => {
                 name={restaurant.name}
                 description={restaurant.description}
                 image={restaurant.image}
-                logo={restaurant.logo}
+
               />
             ))}
           </SimpleGrid>
