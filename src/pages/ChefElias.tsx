@@ -134,9 +134,9 @@ const ChefElias: React.FC = () => {
                       <HStack align="center" spacing={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
                         <HStack>
-                          <Text>- Salt n' Pepper Burgers Pop-up</Text>
+                          <Text>- Salt n' Pepper Burgers Pop-up at Union Market</Text>
                           <Icon as={HiLocationMarker} />
-                          <Text>Harvey's Market, Union Market</Text>
+                          <Text>Harvey's Market</Text>
                         </HStack>
                       </HStack>
                     </Box>
@@ -153,7 +153,7 @@ const ChefElias: React.FC = () => {
                       <HStack align="center" spacing={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2017</Text>
                         <HStack>
-                          <Text>- Mélange Opens Permanent pop-upat Wet Dog Tavern</Text>
+                          <Text>- Mélange Opens Permanent pop-up at Wet Dog Tavern</Text>
                           <Icon as={HiLocationMarker} />
                           <Text>U Street</Text>
                         </HStack>
@@ -171,7 +171,7 @@ const ChefElias: React.FC = () => {
                       />
                       <HStack align="center" spacing={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2020</Text>
-                        <Text>- Mélange moves to new home on 9th St NW in shared space</Text>
+                        <Text>- Mélange moves to new home on 9th St NW</Text>
                       </HStack>
                     </Box>
 
@@ -221,7 +221,7 @@ const ChefElias: React.FC = () => {
               <Box p={8} bg="white" rounded="lg" shadow="md">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
-                    src="/images/press-mentions/jamesbeardfoundation.png"
+                    src="/images/press mentions/jamesbeardfoundation.png"
                     alt="James Beard Foundation"
                     h="60px"
                     objectFit="contain"
@@ -233,7 +233,7 @@ const ChefElias: React.FC = () => {
               <Box p={8} bg="white" rounded="lg" shadow="md">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
-                    src="/images/press-mentions/rammys.png"
+                    src="/images/press mentions/rammys.png"
                     alt="RAMMYs"
                     h="60px"
                     objectFit="contain"
@@ -245,7 +245,7 @@ const ChefElias: React.FC = () => {
               <Box p={8} bg="white" rounded="lg" shadow="md">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
-                    src="/images/press-mentions/eaterawards.png"
+                    src="/images/press mentions/eaterawards.png"
                     alt="Eater DC"
                     h="60px"
                     objectFit="contain"
