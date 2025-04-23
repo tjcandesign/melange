@@ -111,8 +111,8 @@ const ChefElias: React.FC = () => {
                 {/* Timeline */}
                 <Box
                   position="relative"
-                  pl={8}
-                  ml={4}
+                  pl={{ base: 6, md: 8 }}
+                  ml={{ base: 2, md: 4 }}
                   _before={{
                     content: '""',
                     position: 'absolute',
@@ -122,20 +122,21 @@ const ChefElias: React.FC = () => {
                     width: '0',
                     borderLeft: '2px dashed',
                     borderColor: 'gray.200',
-                    transform: 'translateX(-1px)'
+                    zIndex: 1
                   }}
                 >
                   <VStack spacing={8} align="stretch">
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left="-6"
-                        w="10px"
-                        h="10px"
+                        left={{ base: '-4', md: '-6' }}
+                        w="12px"
+                        h="12px"
                         borderRadius="full"
                         bg="brand.primary"
+                        zIndex={2}
                       />
-                      <HStack align="center" spacing={2}>
+                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
                         <Text>- Elias wins a burger challenge by a 13-1 vote</Text>
                       </HStack>
@@ -144,15 +145,16 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left="-6"
-                        w="10px"
-                        h="10px"
+                        left={{ base: '-4', md: '-6' }}
+                        w="12px"
+                        h="12px"
                         borderRadius="full"
                         bg="brand.primary"
+                        zIndex={2}
                       />
-                      <HStack align="center" spacing={2}>
+                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
-                        <HStack>
+                        <HStack flexWrap="wrap">
                           <Text>- Salt n' Pepper Burgers Pop-up</Text>
                           <Icon as={HiLocationMarker} color="brand.primary" />
                           <Text color="brand.primary">Harvey's Market, Union Market</Text>
@@ -163,15 +165,16 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left="-6"
-                        w="10px"
-                        h="10px"
+                        left={{ base: '-4', md: '-6' }}
+                        w="12px"
+                        h="12px"
                         borderRadius="full"
                         bg="brand.primary"
+                        zIndex={2}
                       />
-                      <HStack align="center" spacing={2}>
+                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2017</Text>
-                        <HStack>
+                        <HStack flexWrap="wrap">
                           <Text>- Mélange Opens Permanent pop-up at Wet Dog Tavern</Text>
                           <Icon as={HiLocationMarker} color="brand.primary" />
                           <Text color="brand.primary">U Street</Text>
@@ -182,16 +185,17 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left="-6"
-                        w="10px"
-                        h="10px"
+                        left={{ base: '-4', md: '-6' }}
+                        w="12px"
+                        h="12px"
                         borderRadius="full"
                         bg="brand.primary"
+                        zIndex={2}
                       />
-                      <HStack align="center" spacing={2}>
+                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2020</Text>
                         <Text>- Mélange moves to new home</Text>
-                        <HStack>
+                        <HStack flexWrap="wrap">
                           <Icon as={HiLocationMarker} color="brand.primary" />
                           <Text color="brand.primary">9th St NW</Text>
                         </HStack>
@@ -201,13 +205,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left="-6"
-                        w="10px"
-                        h="10px"
+                        left={{ base: '-4', md: '-6' }}
+                        w="12px"
+                        h="12px"
                         borderRadius="full"
                         bg="brand.primary"
+                        zIndex={2}
                       />
-                      <HStack align="center" spacing={2}>
+                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold">2022</Text>
                         <Text>- Doro Soul Food opens</Text>
                       </HStack>
@@ -216,13 +221,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left="-6"
-                        w="10px"
-                        h="10px"
+                        left={{ base: '-4', md: '-6' }}
+                        w="12px"
+                        h="12px"
                         borderRadius="full"
                         bg="brand.primary"
+                        zIndex={2}
                       />
-                      <HStack align="center" spacing={2}>
+                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
                         <Text fontFamily="Courier New" fontWeight="bold">2025</Text>
                         <Text>- Melange Inc. opens including a new concept Moya</Text>
                       </HStack>
