@@ -104,7 +104,7 @@ const Home: React.FC = () => {
           <VStack spacing={{ base: 10, md: 8 }} align="flex-start" maxW="600px">
             <Heading
               as="h1"
-              fontSize={{ base: '3xl', md: '4xl' }}
+              fontSize={{ base: '2xl', md: '4xl' }}
               color="white"
               fontFamily="heading"
             >
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
               fontWeight="bold"
               letterSpacing="wide"
             >
-              Learn More About Chef Elias
+              Learn More About Chef Elias →
             </Button>
           </VStack>
         </Container>
@@ -135,10 +135,10 @@ const Home: React.FC = () => {
       <Box py={20} bg="gray.50">
         <Container maxW="container.xl">
           <VStack spacing={6} mb={16}>
-            <Heading textAlign={{ base: 'left', md: 'center' }} fontFamily="heading" size="2xl">
+            <Heading textAlign="left" fontFamily="heading" size="2xl">
               Our Restaurant Concepts
             </Heading>
-            <Text textAlign={{ base: 'left', md: 'center' }} fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
+            <Text textAlign="left" fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
               Three distinct restaurants where Ethiopian traditions meet American favorites
             </Text>
           </VStack>
