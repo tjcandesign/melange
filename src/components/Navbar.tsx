@@ -18,7 +18,11 @@ import {
 import { ChevronDownIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Navbar: React.FC = () => {
-  const { isOpen, onToggle } = useDisclosure();
+  const { isOpen, onToggle, onClose } = useDisclosure();
+  
+  const handleNavigation = () => {
+    onClose();
+  };
 
   return (
     <Box
@@ -55,9 +59,9 @@ const Navbar: React.FC = () => {
             spacing={16}
             align="center"
           >
-            <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
-            <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
-            <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Media Coverage</Link>
+            <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Chef Elias Taddesse</Link>
+            <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Our Restaurants</Link>
+            <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
           </Stack>
         </Flex>
       </Container>
@@ -70,23 +74,24 @@ const Navbar: React.FC = () => {
         left={0}
         right={0}
         bottom={0}
-        bg="brand.primary"
+        bgColor="rgba(0, 48, 135, 0.95)"
         zIndex={20}
         transform={isOpen ? 'translateX(0)' : 'translateX(-100%)'}
-        transition="transform 0.3s ease-in-out"
+        transition="all 0.3s ease-in-out"
+        opacity={isOpen ? 1 : 0}
         flexDirection="column"
         justifyContent="center"
       >
         <Container maxW="container.xl">
           <VStack spacing={8} align="stretch" ml={8}>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
-              <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Chef Elias Taddesse</Link>
+              <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Chef Elias Taddesse</Link>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
-              <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Our Restaurants</Link>
+              <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Our Restaurants</Link>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
-              <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Media Coverage</Link>
+              <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
             </Box>
           </VStack>
         </Container>
