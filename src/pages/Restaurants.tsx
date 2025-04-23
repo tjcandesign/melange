@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Container, Heading, Text, SimpleGrid, Image, VStack, Button, Divider, Link as ChakraLink } from '@chakra-ui/react';
+import { Box, Container, Heading, Text, SimpleGrid, Image, VStack, Button, Divider, Link } from '@chakra-ui/react';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { motion } from 'framer-motion';
 import { images } from '../data/images';
 
@@ -56,16 +57,9 @@ const Restaurants: React.FC = () => {
                 heritage with his Michelin-starred French training to create an unprecedented 
                 burger experience.
               </Text>
-              <Box>
-                <Text fontWeight="bold" mb={2}>Location</Text>
-                <Text>Washington, DC</Text>
-                <ChakraLink href="https://www.melangedc.com" isExternal color="brand.accent" mt={2} display="block">
-                  Visit Website
-                </ChakraLink>
-              </Box>
-              <Button colorScheme="gold" size="lg">
-                Make a Reservation
-              </Button>
+              <Link href="https://www.melangedc.com" isExternal>
+                <Button colorScheme="gold" rightIcon={<ExternalLinkIcon />}>Visit Website</Button>
+              </Link>
             </VStack>
           </SimpleGrid>
         </Container>
@@ -74,42 +68,29 @@ const Restaurants: React.FC = () => {
       <Divider />
 
       {/* Doro Soul Food Section */}
-      <Box py={20} bg="gray.50" id="doro">
+      <Box py={20} id="doro">
         <Container maxW="container.xl">
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={16} alignItems="center">
-            <VStack align="flex-start" spacing={6} order={{ base: 2, md: 1 }}>
+            <Box>
+              <Image
+                src="/images/Doro.png"
+                alt="Doro Soul Food"
+                rounded="lg"
+                shadow="lg"
+              />
+            </Box>
+            <VStack align="flex-start" spacing={6}>
               <Heading size="xl" fontFamily="heading">Doro Soul Food</Heading>
               <Text fontSize="lg">
-                A revolutionary concept that infuses traditional American soul food with Ethiopian flavors. 
-                From Michelin-starred Chef Elias Taddesse, Doro Soul Food creates a unique dining 
-                experience that celebrates the natural harmony between these two rich culinary traditions.
+                Doro Soul Food is where Ethiopian traditions meet American soul food classics.
+                Each dish tells a story of cultural fusion, bringing warmth and comfort to
+                every plate. Our menu features Ethiopian-spiced fried chicken, collard
+                greens with berbere, and other innovative takes on soul food favorites.
               </Text>
-
-              <Box>
-                <Text fontWeight="bold" mb={2}>Location</Text>
-                <Text>Washington, DC</Text>
-                <ChakraLink href="https://www.dorosoulfood.com" isExternal color="brand.accent" mt={2} display="block">
-                  Visit Website
-                </ChakraLink>
-              </Box>
-              <Button colorScheme="gold" size="lg">
-                Order Online
-              </Button>
+              <Link href="https://www.dorosoulfood.com" isExternal>
+                <Button colorScheme="gold" rightIcon={<ExternalLinkIcon />}>Visit Website</Button>
+              </Link>
             </VStack>
-            <MotionBox
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              order={{ base: 1, md: 2 }}
-            >
-              <Image
-                src="/images/doro.png"
-                alt="Doro Soul Food Interior"
-                rounded="lg"
-                shadow="xl"
-              />
-            </MotionBox>
           </SimpleGrid>
         </Container>
       </Box>
@@ -140,16 +121,9 @@ const Restaurants: React.FC = () => {
                 Our creative tacos and fusion dishes showcase how traditional Ethiopian flavors 
                 can harmoniously blend with international culinary traditions.
               </Text>
-              <Box>
-                <Text fontWeight="bold" mb={2}>Location</Text>
-                <Text>Washington, DC</Text>
-                <ChakraLink href="https://www.moyaethiopiantacos.com" isExternal color="brand.accent" mt={2} display="block">
-                  Visit Website
-                </ChakraLink>
-              </Box>
-              <Button colorScheme="gold" size="lg">
-                View Menu
-              </Button>
+              <Link href="https://www.moyaethiopiantacos.com" isExternal>
+                <Button colorScheme="gold" rightIcon={<ExternalLinkIcon />}>Visit Website</Button>
+              </Link>
             </VStack>
           </SimpleGrid>
         </Container>
