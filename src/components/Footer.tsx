@@ -46,10 +46,16 @@ const Footer: React.FC = () => {
 
         <Divider my={8} borderColor="whiteAlpha.400" />
 
-        <HStack justify="space-between" fontSize="sm">
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          justify="space-between"
+          align={{ base: 'flex-start', md: 'center' }}
+          spacing={{ base: 4, md: 0 }}
+          fontSize="sm"
+        >
           <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} All rights reserved.</Text>
           <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase" opacity={0.5}>Hand built with ❤️ in DC by <Link href="https://tjcandesign.github.io/" isExternal color="white" textDecoration="underline">TJ CICHECKI</Link></Text>
-        </HStack>
+        </Stack>
       </Container>
     </Box>
   );
