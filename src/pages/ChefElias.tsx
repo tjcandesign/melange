@@ -49,9 +49,9 @@ const ChefElias: React.FC = () => {
         <Container maxW="container.xl">
           <VStack spacing={12} align="flex-start" w="full">
             <Box w="full">
-              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full" alignItems="start">
-                <VStack spacing={4} align="flex-start" maxW="container.sm">
-                  <Box maxW="520px" mb={8}>
+              <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full" alignItems="center">
+                <VStack spacing={6} align="flex-start" maxW="container.sm" justify="center">
+                  <Box maxW="520px" mb={4}>
                     <Heading as="h2" size="xl">
                       Elias's Career Highlights
                     </Heading>
