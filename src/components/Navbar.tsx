@@ -24,6 +24,21 @@ const Navbar: React.FC = () => {
   
   const handleNavigation = () => {
     onClose();
+    onRestaurantsToggle();
+  };
+
+  const handleAnchorNavigation = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute('href');
+    if (href?.includes('#')) {
+      const id = href.split('#')[1];
+      const element = document.getElementById(id);
+      if (element) {
+        e.preventDefault();
+        onClose();
+        onRestaurantsToggle();
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   return (
@@ -128,7 +143,7 @@ const Navbar: React.FC = () => {
                       fontFamily="mono"
                       color="whiteAlpha.900"
                       fontSize="lg"
-                      onClick={handleNavigation}
+                      onClick={handleAnchorNavigation}
                     >
                       Mélange
                     </Link>
@@ -138,7 +153,7 @@ const Navbar: React.FC = () => {
                       fontFamily="mono"
                       color="whiteAlpha.900"
                       fontSize="lg"
-                      onClick={handleNavigation}
+                      onClick={handleAnchorNavigation}
                     >
                       Doro Soul Food
                     </Link>
@@ -148,7 +163,7 @@ const Navbar: React.FC = () => {
                       fontFamily="mono"
                       color="whiteAlpha.900"
                       fontSize="lg"
-                      onClick={handleNavigation}
+                      onClick={handleAnchorNavigation}
                     >
                       Moya
                     </Link>

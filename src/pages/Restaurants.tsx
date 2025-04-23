@@ -33,7 +33,7 @@ const Restaurants: React.FC = () => {
       </Box>
 
       {/* Mélange Section */}
-      <Box py={20} id="melange">
+      <Box py={20} id="melange" sx={{ scrollMarginTop: { base: '170px', md: '100px' } }}>
         <Container maxW="container.xl">
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={16} alignItems="center">
             <MotionBox
@@ -68,7 +68,7 @@ const Restaurants: React.FC = () => {
       <Divider />
 
       {/* Doro Soul Food Section */}
-      <Box py={20} id="doro">
+      <Box py={20} id="doro" sx={{ scrollMarginTop: { base: '170px', md: '100px' } }}>
         <Container maxW="container.xl">
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={16} alignItems="center">
             <Box>
@@ -98,7 +98,7 @@ const Restaurants: React.FC = () => {
       <Divider />
 
       {/* Moya Section */}
-      <Box py={20} id="moya">
+      <Box py={20} id="moya" sx={{ scrollMarginTop: { base: '170px', md: '100px' } }}>
         <Container maxW="container.xl">
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={16} alignItems="center">
             <MotionBox
