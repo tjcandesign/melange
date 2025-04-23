@@ -67,12 +67,12 @@ const ChefElias: React.FC = () => {
                 </VStack>
                 <Box>
                   <Image
-                    src="/images/elias_melange.jpg"
-                    alt="Chef Elias at Mélange"
+                    src="/images/Chef-Elias-Taddesse.jpg"
+                    alt="Chef Elias cooking"
                     rounded="lg"
                     shadow="lg"
                     w="full"
-                    h="400px"
+                    h="auto"
                     objectFit="cover"
                   />
                 </Box>
@@ -87,10 +87,12 @@ const ChefElias: React.FC = () => {
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={16} alignItems="center">
             <Box order={{ base: 2, md: 1 }}>
               <Image
-                src="/images/Chef-Elias-Taddesse.jpg"
-                alt="Chef Elias cooking"
+                src="/images/elias_melange.jpg"
+                alt="Chef Elias at Mélange"
                 rounded="lg"
                 shadow="xl"
+                h="auto"
+                w="full"
               />
             </Box>
             <VStack align="flex-start" spacing={8} order={{ base: 1, md: 2 }}>
