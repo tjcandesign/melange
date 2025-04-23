@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
-    <Box bg="brand.primary" color="white" py={10}>
+    <Box bg="brand.dark" color="white" py={10}>
       <Container maxW="container.xl">
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
           <Stack spacing={6} w="full">

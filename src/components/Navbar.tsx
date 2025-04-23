@@ -46,10 +46,11 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <Stack
-          direction="row"
-          spacing={12}
-          align="center"
-          display={{ base: 'none', md: 'flex' }}
+          spacing={{ base: 8, md: 4 }}
+          align={{ base: 'flex-start', md: 'center' }}
+          justify={['center', 'space-between', 'flex-end', 'flex-end']}
+          direction={['column', 'row', 'row', 'row']}
+          w="full"
         >
           <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
           
@@ -62,16 +63,19 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Content */}
       <Box
-        position="fixed"
-        top="96px"
-        left={0}
-        right={0}
-        bottom={0}
-        display={{ base: isOpen ? 'flex' : 'none', md: 'none' }}
-        bg="brand.blue"
-        alignItems="center"
-        justifyContent="center"
-        zIndex={20}
+        display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
+        flexBasis={{ base: '100%', md: 'auto' }}
+        ml={{ md: 8 }}
+        position={{ base: 'fixed', md: 'static' }}
+        top="0"
+        left="0"
+        right="0"
+        bottom="0"
+        bg={{ base: 'brand.primary', md: 'transparent' }}
+        zIndex="1000"
+        flexDir={{ base: 'column', md: 'row' }}
+        pt={{ base: '100px', md: 0 }}
+        px={{ base: '6', md: 0 }}
       >
         <Stack spacing={12} p={4} align="center">
           <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>

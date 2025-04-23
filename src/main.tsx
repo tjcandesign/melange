@@ -6,9 +6,11 @@ import App from './App'
 const theme = extendTheme({
   colors: {
     brand: {
-      primary: '#225d94',
-      accent: '#D69E2E',
-      blue: '#225d94'
+      primary: '#225D94',
+      dark: '#1a4670',
+      accent: '#B88746',
+      blue: '#225D94',
+      gold: '#B88746'
     },
   },
   fonts: {

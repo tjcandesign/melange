@@ -30,7 +30,7 @@ const Home: React.FC = () => {
     <Box>
       {/* Hero Section */}
       <Box 
-        h="90vh" 
+        h={{ base: '100vh', md: '90vh' }} 
         position="relative" 
         color="white"
         overflow="hidden"
@@ -43,7 +43,8 @@ const Home: React.FC = () => {
           bottom="0"
           zIndex="-2"
           bgImage="url('/images/Elias_hero.jpg')"
-          bgPosition={{ base: "center 30%", md: "center" }}
+          bgPosition="center"
+          bgAttachment={{ base: 'scroll', md: 'fixed' }}
           bgSize="cover"
         />
         {/* Dark Overlay */}
@@ -53,8 +54,20 @@ const Home: React.FC = () => {
           left="0"
           right="0"
           bottom="0"
-          bg="rgba(0, 0, 0, 0.65)"
+          bg="rgba(0, 0, 0, 0.4)"
           zIndex="-1"
+          sx={{
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0,
+              backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0)`,
+              backgroundSize: '20px 20px',
+            }
+          }}
         />
         {/* Creative Overlay */}
         <Box
@@ -88,16 +101,16 @@ const Home: React.FC = () => {
           transformOrigin="bottom right"
         />
         <Container maxW="container.xl" h="100%" display="flex" alignItems="center">
-          <VStack spacing={{ base: 8, md: 6 }} align="flex-start" maxW="600px">
+          <VStack spacing={{ base: 10, md: 8 }} align="flex-start" maxW="600px">
             <Heading
               as="h1"
-              size="4xl"
+              fontSize={{ base: '3xl', md: '4xl' }}
               color="white"
               fontFamily="heading"
             >
               Where Ethiopian Heritage Shapes Modern American Dining
             </Heading>
-            <Text fontSize="xl" fontFamily="Inter">
+            <Text fontSize={{ base: 'lg', md: 'xl' }} fontFamily="Inter">
               From Ethiopia to DC, Michelin-starred Chef Elias Taddesse brings his heritage
               and classical training to create memorable dining experiences
             </Text>
@@ -122,10 +135,10 @@ const Home: React.FC = () => {
       <Box py={20} bg="gray.50">
         <Container maxW="container.xl">
           <VStack spacing={6} mb={16}>
-            <Heading textAlign="center" fontFamily="heading" size="2xl">
+            <Heading textAlign={{ base: 'left', md: 'center' }} fontFamily="heading" size="2xl">
               Our Restaurant Concepts
             </Heading>
-            <Text textAlign="center" fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
+            <Text textAlign={{ base: 'left', md: 'center' }} fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
               Three distinct restaurants where Ethiopian traditions meet American favorites
             </Text>
           </VStack>

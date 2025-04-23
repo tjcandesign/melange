@@ -24,7 +24,7 @@ const ChefElias: React.FC = () => {
           right="0"
           bottom="0"
           zIndex="-1"
-          bgImage="url('/images/Chef-Elias-Taddesse-of-Melange-and-Doro-Soul-Food.jpeg')"
+          bgImage="url('/images/hero.jpg')"
           bgPosition="center"
           bgSize="cover"
           filter="brightness(0.6)"
@@ -33,12 +33,12 @@ const ChefElias: React.FC = () => {
           <VStack spacing={6} align="flex-start" maxW="800px">
             <Heading 
               as="h1" 
-              size="2xl"
+              size="4xl"
               fontFamily="heading"
             >
               Chef Elias Taddesse
             </Heading>
-            <Text fontSize="xl">
+            <Text fontSize="2xl">
               Ethiopian-born, French-trained Michelin-starred Chef
             </Text>
           </VStack>
