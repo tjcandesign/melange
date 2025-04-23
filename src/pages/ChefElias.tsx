@@ -107,7 +107,22 @@ const ChefElias: React.FC = () => {
                 </Text>
 
                 {/* Timeline */}
-                <Box pl={4} borderLeft="2px solid" borderColor="brand.primary">
+                <Box
+                  position="relative"
+                  pl={8}
+                  ml={4}
+                  _before={{
+                    content: '""',
+                    position: 'absolute',
+                    left: '0',
+                    top: '0',
+                    bottom: '0',
+                    width: '0',
+                    borderLeft: '2px dashed',
+                    borderColor: 'gray.200',
+                    transform: 'translateX(-1px)'
+                  }}
+                >
                   <VStack spacing={8} align="stretch">
                     <Box position="relative">
                       <Box
@@ -136,9 +151,9 @@ const ChefElias: React.FC = () => {
                       <HStack align="center" spacing={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
                         <HStack>
-                          <Text>- Salt n' Pepper Burgers Pop-up at Union Market</Text>
-                          <Icon as={HiLocationMarker} />
-                          <Text>Harvey's Market</Text>
+                          <Text>- Salt n' Pepper Burgers Pop-up</Text>
+                          <Icon as={HiLocationMarker} color="brand.primary" />
+                          <Text color="brand.primary">Harvey's Market, Union Market</Text>
                         </HStack>
                       </HStack>
                     </Box>
@@ -153,11 +168,11 @@ const ChefElias: React.FC = () => {
                         bg="brand.primary"
                       />
                       <HStack align="center" spacing={2}>
-                        <Text fontFamily="Courier New" fontWeight="bold">2017</Text>
+                        <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2017</Text>
                         <HStack>
                           <Text>- Mélange Opens Permanent pop-up at Wet Dog Tavern</Text>
-                          <Icon as={HiLocationMarker} />
-                          <Text>U Street</Text>
+                          <Icon as={HiLocationMarker} color="brand.primary" />
+                          <Text color="brand.primary">U Street</Text>
                         </HStack>
                       </HStack>
                     </Box>
@@ -172,8 +187,12 @@ const ChefElias: React.FC = () => {
                         bg="brand.primary"
                       />
                       <HStack align="center" spacing={2}>
-                        <Text fontFamily="Courier New" fontWeight="bold">2020</Text>
-                        <Text>- Mélange moves to new home on 9th St NW</Text>
+                        <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2020</Text>
+                        <Text>- Mélange moves to new home</Text>
+                        <HStack>
+                          <Icon as={HiLocationMarker} color="brand.primary" />
+                          <Text color="brand.primary">9th St NW</Text>
+                        </HStack>
                       </HStack>
                     </Box>
 
