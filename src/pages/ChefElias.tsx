@@ -64,7 +64,7 @@ const ChefElias: React.FC = () => {
                     Ethiopian flavors. His latest venture, Moya, brings Ethiopian-inspired tacos and fusion cuisine to the DC food scene.
                   </Text>
                 </VStack>
-                <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+                <Box>
                   <Image
                     src="/images/elias_melange.jpg"
                     alt="Chef Elias at Mélange"
@@ -74,16 +74,7 @@ const ChefElias: React.FC = () => {
                     h="300px"
                     objectFit="cover"
                   />
-                  <Image
-                    src="/images/Chef-Elias-Taddesse.jpg"
-                    alt="Chef Elias cooking"
-                    rounded="lg"
-                    shadow="lg"
-                    w="full"
-                    h="300px"
-                    objectFit="cover"
-                  />
-                </SimpleGrid>
+                </Box>
               </SimpleGrid>
             </Box>
           </VStack>
