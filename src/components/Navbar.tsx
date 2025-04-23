@@ -4,85 +4,84 @@ import {
   Box,
   Container,
   Flex,
+  IconButton,
   Link,
   Stack,
+  VStack,
+  useDisclosure,
   Button,
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
-  useDisclosure,
-  IconButton
+  MenuItem
 } from '@chakra-ui/react';
-import { ChevronDownIcon, HamburgerIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Navbar: React.FC = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box 
-      bg="brand.blue" 
-      position="sticky" 
-      top={0} 
-      zIndex="sticky"
-      backdropFilter="blur(5px)"
+    <Box
+      as="nav"
+      position="fixed"
+      w="full"
+      bg="brand.primary"
+      color="white"
+      zIndex={1000}
+      py={4}
     >
       <Container maxW="container.xl">
-        <Flex h={24} alignItems="center" justifyContent="space-between">
+        <Flex align="center" justify="space-between">
+          <Box as={RouterLink} to="/" display="flex" alignItems="center">
+            <Box as="img" src="/images/SVG/logo.svg" height="60px" filter="brightness(0) invert(1)" />
+          </Box>
 
-        <RouterLink to="/">
-          <Box as="img" src="/images/SVG/logo.svg" height="60px" filter="brightness(0) invert(1)" />
-        </RouterLink>
+          <IconButton
+            display={{ base: 'flex', md: 'none' }}
+            onClick={onToggle}
+            icon={isOpen ? <CloseIcon w={6} h={6} /> : <HamburgerIcon w={6} h={6} />}
+            variant="ghost"
+            color="white"
+            aria-label="Toggle Navigation"
+            _hover={{ bg: 'whiteAlpha.200' }}
+            size="lg"
+            zIndex={2000}
+          />
 
-        {/* Mobile Menu */}
-        <IconButton
-          display={{ base: 'flex', md: 'none' }}
-          onClick={onToggle}
-          icon={<HamburgerIcon boxSize={8} />}
-          color="white"
-          variant="ghost"
-          aria-label="Toggle Navigation"
-        />
-
-        {/* Desktop Menu */}
-        <Stack
-          spacing={{ base: 8, md: 4 }}
-          align={{ base: 'flex-start', md: 'center' }}
-          justify={['center', 'space-between', 'flex-end', 'flex-end']}
-          direction={['column', 'row', 'row', 'row']}
-          w="full"
-        >
-          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
-          
-          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
-
-          <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
-        </Stack>
+          {/* Desktop Menu */}
+          <Stack
+            display={{ base: 'none', md: 'flex' }}
+            direction="row"
+            spacing={8}
+            align="center"
+          >
+            <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
+            <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
+            <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press</Link>
+          </Stack>
         </Flex>
       </Container>
 
-      {/* Mobile Menu Content */}
+      {/* Mobile Menu */}
       <Box
-        display={{ base: isOpen ? 'flex' : 'none', md: 'flex' }}
-        flexBasis={{ base: '100%', md: 'auto' }}
-        ml={{ md: 8 }}
-        position={{ base: 'fixed', md: 'static' }}
-        top="0"
-        left="0"
-        right="0"
-        bottom="0"
-        bg={{ base: 'brand.primary', md: 'transparent' }}
-        zIndex="1000"
-        flexDir={{ base: 'column', md: 'row' }}
-        pt={{ base: '100px', md: 0 }}
-        px={{ base: '6', md: 0 }}
+        display={{ base: isOpen ? 'flex' : 'none', md: 'none' }}
+        position="fixed"
+        top={0}
+        left={0}
+        right={0}
+        bottom={0}
+        bg="brand.primary"
+        zIndex={1500}
+        flexDirection="column"
+        justifyContent="center"
       >
-        <Stack spacing={12} p={4} align="center">
-          <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
-          <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Our Restaurants</Link>
-
-          <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Press Mentions</Link>
-        </Stack>
+        <Container maxW="container.xl">
+          <VStack spacing={12} align="flex-start">
+            <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Chef Elias Taddesse</Link>
+            <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Our Restaurants</Link>
+            <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Press</Link>
+          </VStack>
+        </Container>
       </Box>
     </Box>
   );
