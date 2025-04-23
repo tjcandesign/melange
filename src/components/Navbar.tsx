@@ -7,6 +7,7 @@ import {
   IconButton,
   Link,
   Stack,
+  Text,
   VStack,
   useDisclosure,
   Button,
@@ -19,6 +20,7 @@ import { ChevronDownIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 const Navbar: React.FC = () => {
   const { isOpen, onToggle, onClose } = useDisclosure();
+  const { isOpen: isRestaurantsOpen, onToggle: onRestaurantsToggle } = useDisclosure();
   
   const handleNavigation = () => {
     onClose();
@@ -90,7 +92,69 @@ const Navbar: React.FC = () => {
               <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Chef Elias Taddesse</Link>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
-              <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Our Restaurants</Link>
+              <Flex
+                direction="column"
+                align="flex-start"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onRestaurantsToggle();
+                }}
+              >
+                <Flex align="center" w="full" cursor="pointer">
+                  <Text fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">
+                    Our Restaurants
+                  </Text>
+                  <Box
+                    as={ChevronDownIcon}
+                    w={6}
+                    h={6}
+                    ml={2}
+                    transform={isRestaurantsOpen ? 'rotate(180deg)' : 'rotate(0)'}
+                    transition="transform 0.2s"
+                    color="white"
+                  />
+                </Flex>
+                <Box
+                  overflow="hidden"
+                  maxH={isRestaurantsOpen ? '200px' : '0'}
+                  transition="max-height 0.3s ease-in-out"
+                  w="full"
+                  mt={isRestaurantsOpen ? 4 : 0}
+                >
+                  <VStack spacing={4} align="flex-start" pl={4}>
+                    <Link
+                      as={RouterLink}
+                      to="/restaurants#melange"
+                      fontFamily="mono"
+                      color="whiteAlpha.900"
+                      fontSize="lg"
+                      onClick={handleNavigation}
+                    >
+                      Mélange
+                    </Link>
+                    <Link
+                      as={RouterLink}
+                      to="/restaurants#doro"
+                      fontFamily="mono"
+                      color="whiteAlpha.900"
+                      fontSize="lg"
+                      onClick={handleNavigation}
+                    >
+                      Doro Soul Food
+                    </Link>
+                    <Link
+                      as={RouterLink}
+                      to="/restaurants#moya"
+                      fontFamily="mono"
+                      color="whiteAlpha.900"
+                      fontSize="lg"
+                      onClick={handleNavigation}
+                    >
+                      Moya
+                    </Link>
+                  </VStack>
+                </Box>
+              </Flex>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
               <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
