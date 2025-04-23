@@ -103,13 +103,110 @@ const ChefElias: React.FC = () => {
             </Box>
             <VStack align="flex-start" spacing={8} order={{ base: 1, md: 2 }}>
               <Heading size="xl" fontFamily="heading">Culinary Journey</Heading>
-              <Text fontSize="lg" lineHeight="tall">
-                Chef Elias's DC journey began in 2016 with a pop-up at Neal Place Tap & Garden.
-                His passion for crafting the perfect burger led to Salt n' Pepper Burgers at
-                Harvey's Market in Union Market. This evolved into Mélange at Wet Dog Tavern
-                before finding its permanent home in 2020. Building on this success, he opened
-                Doro Soul Food in 2022, bringing Ethiopian warmth to American soul food classics.
-              </Text>
+              <VStack spacing={8} align="stretch" w="full">
+                <Text fontSize="lg" lineHeight="tall">
+                  Chef Elias's DC journey began in 2016 with a pop-up at Neal Place Tap & Garden.
+                  His passion for crafting the perfect burger led to Salt n' Pepper Burgers at
+                  Harvey's Market in Union Market. This evolved into Mélange at Wet Dog Tavern
+                  before finding its permanent home in 2020. Building on this success, he opened
+                  Doro Soul Food in 2022, bringing Ethiopian warmth to American soul food classics.
+                </Text>
+
+                {/* Timeline */}
+                <Box pl={4} borderLeft="2px solid" borderColor="brand.primary">
+                  <VStack spacing={8} align="stretch">
+                    <Box position="relative">
+                      <Box
+                        position="absolute"
+                        left="-6"
+                        w="10px"
+                        h="10px"
+                        borderRadius="full"
+                        bg="brand.primary"
+                      />
+                      <VStack align="start" spacing={1}>
+                        <Text fontWeight="bold">2025</Text>
+                        <Text>Melange Inc. opens including a new concept Moya</Text>
+                      </VStack>
+                    </Box>
+
+                    <Box position="relative">
+                      <Box
+                        position="absolute"
+                        left="-6"
+                        w="10px"
+                        h="10px"
+                        borderRadius="full"
+                        bg="brand.primary"
+                      />
+                      <VStack align="start" spacing={1}>
+                        <Text fontWeight="bold">2022</Text>
+                        <Text>Doro Soul Food opens</Text>
+                      </VStack>
+                    </Box>
+
+                    <Box position="relative">
+                      <Box
+                        position="absolute"
+                        left="-6"
+                        w="10px"
+                        h="10px"
+                        borderRadius="full"
+                        bg="brand.primary"
+                      />
+                      <VStack align="start" spacing={1}>
+                        <Text fontWeight="bold">2020</Text>
+                        <Text>Mélange moves to new home on 9th St NW in shared space</Text>
+                      </VStack>
+                    </Box>
+
+                    <Box position="relative">
+                      <Box
+                        position="absolute"
+                        left="-6"
+                        w="10px"
+                        h="10px"
+                        borderRadius="full"
+                        bg="brand.primary"
+                      />
+                      <VStack align="start" spacing={1}>
+                        <Text fontWeight="bold">2017</Text>
+                        <Text>Mélange at Wet Dog Tavern (Location U Street)</Text>
+                      </VStack>
+                    </Box>
+
+                    <Box position="relative">
+                      <Box
+                        position="absolute"
+                        left="-6"
+                        w="10px"
+                        h="10px"
+                        borderRadius="full"
+                        bg="brand.primary"
+                      />
+                      <VStack align="start" spacing={1}>
+                        <Text fontWeight="bold">2016</Text>
+                        <Text>Salt n' Pepper Burgers Pop-up (Location: Harvey's Market, Union Market)</Text>
+                      </VStack>
+                    </Box>
+
+                    <Box position="relative">
+                      <Box
+                        position="absolute"
+                        left="-6"
+                        w="10px"
+                        h="10px"
+                        borderRadius="full"
+                        bg="brand.primary"
+                      />
+                      <VStack align="start" spacing={1}>
+                        <Text fontWeight="bold">2016</Text>
+                        <Text>Elias wins a burger challenge by a 13-1 vote</Text>
+                      </VStack>
+                    </Box>
+                  </VStack>
+                </Box>
+              </VStack>
             </VStack>
           </SimpleGrid>
         </Container>
