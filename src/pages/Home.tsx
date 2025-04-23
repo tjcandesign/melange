@@ -89,10 +89,13 @@ const Home: React.FC = () => {
         />
         <Container maxW="container.xl" h="100%" display="flex" alignItems="center">
           <VStack spacing={{ base: 8, md: 6 }} align="flex-start" maxW="600px">
-            <Heading 
-              as="h1" 
-              size="4xl" 
+            <Heading
+              as="h1"
+              size="4xl"
+              color="white"
               fontFamily="heading"
+              textTransform="uppercase"
+              fontWeight="bold"
             >
               Where Ethiopian Heritage Shapes Modern American Dining
             </Heading>
@@ -121,7 +124,7 @@ const Home: React.FC = () => {
       <Box py={20} bg="gray.50">
         <Container maxW="container.xl">
           <VStack spacing={6} mb={16}>
-            <Heading textAlign="center" fontFamily="heading" size="2xl">
+            <Heading textAlign="center" fontFamily="heading" size="2xl" textTransform="uppercase" fontWeight="bold">
               Our Restaurant Concepts
             </Heading>
             <Text textAlign="center" fontSize="xl" fontFamily="Inter" maxW="container.md" color="gray.600">
@@ -154,7 +157,7 @@ const Home: React.FC = () => {
               />
             </Box>
             <VStack align="flex-start" spacing={6}>
-              <Heading fontFamily="heading">Meet Chef Elias Taddesse</Heading>
+              <Heading fontFamily="heading" textTransform="uppercase" fontWeight="bold">Meet Chef Elias Taddesse</Heading>
               <Text fontSize="lg" fontFamily="Inter">
                 Ethiopian-born and French-trained, Chef Elias Taddesse brings his Michelin-starred 
                 expertise to create an unprecedented fusion of flavors. Through his acclaimed DC restaurant 

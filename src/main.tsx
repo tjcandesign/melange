@@ -12,7 +12,7 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: '"Playfair Display", serif',
+    heading: '"Courier New", monospace',
     body: '"Open Sans", sans-serif',
     mono: '"Courier New", monospace',
   },
