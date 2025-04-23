@@ -112,11 +112,10 @@ const ChefElias: React.FC = () => {
                 <Box
                   position="relative"
                   pl={{ base: 6, md: 8 }}
-                  ml={{ base: 2, md: 4 }}
                   _before={{
                     content: '""',
                     position: 'absolute',
-                    left: '0',
+                    left: '5px',
                     top: '0',
                     bottom: '0',
                     width: '0',
@@ -129,14 +128,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left={{ base: '-4', md: '-6' }}
+                        left="0"
                         w="12px"
                         h="12px"
                         borderRadius="full"
                         bg="brand.primary"
                         zIndex={2}
                       />
-                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
+                      <HStack align="flex-start" spacing={{ base: 2, md: 3 }} flexWrap="wrap" pl={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
                         <Text>- Elias wins a burger challenge by a 13-1 vote</Text>
                       </HStack>
@@ -145,14 +144,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left={{ base: '-4', md: '-6' }}
+                        left="0"
                         w="12px"
                         h="12px"
                         borderRadius="full"
                         bg="brand.primary"
                         zIndex={2}
                       />
-                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
+                      <HStack align="flex-start" spacing={{ base: 2, md: 3 }} flexWrap="wrap" pl={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
                         <HStack flexWrap="wrap">
                           <Text>- Salt n' Pepper Burgers Pop-up</Text>
@@ -165,14 +164,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left={{ base: '-4', md: '-6' }}
+                        left="0"
                         w="12px"
                         h="12px"
                         borderRadius="full"
                         bg="brand.primary"
                         zIndex={2}
                       />
-                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
+                      <HStack align="flex-start" spacing={{ base: 2, md: 3 }} flexWrap="wrap" pl={2}>
                         <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2017</Text>
                         <HStack flexWrap="wrap">
                           <Text>- Mélange Opens at Wet Dog Tavern</Text>
@@ -185,14 +184,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left={{ base: '-4', md: '-6' }}
+                        left="0"
                         w="12px"
                         h="12px"
                         borderRadius="full"
                         bg="brand.primary"
                         zIndex={2}
                       />
-                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
+                      <HStack align="flex-start" spacing={{ base: 2, md: 3 }} flexWrap="wrap" pl={2}>
                         <Text fontFamily="Courier New" fontWeight="bold" color="brand.primary">2020</Text>
                         <Text>- Mélange moves to new home</Text>
                         <HStack flexWrap="wrap">
@@ -205,14 +204,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left={{ base: '-4', md: '-6' }}
+                        left="0"
                         w="12px"
                         h="12px"
                         borderRadius="full"
                         bg="brand.primary"
                         zIndex={2}
                       />
-                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
+                      <HStack align="flex-start" spacing={{ base: 2, md: 3 }} flexWrap="wrap" pl={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2022</Text>
                         <Text>- Doro Soul Food opens</Text>
                       </HStack>
@@ -221,14 +220,14 @@ const ChefElias: React.FC = () => {
                     <Box position="relative">
                       <Box
                         position="absolute"
-                        left={{ base: '-4', md: '-6' }}
+                        left="0"
                         w="12px"
                         h="12px"
                         borderRadius="full"
                         bg="brand.primary"
                         zIndex={2}
                       />
-                      <HStack align="flex-start" spacing={{ base: 1, md: 2 }} flexWrap="wrap">
+                      <HStack align="flex-start" spacing={{ base: 2, md: 3 }} flexWrap="wrap" pl={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2025</Text>
                         <Text>- Melange Inc. opens including a new concept Moya</Text>
                       </HStack>
