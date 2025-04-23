@@ -11,7 +11,8 @@ const Restaurants: React.FC = () => {
     <Box>
       {/* Hero Section */}
       <Box 
-        py={20} 
+        pt={{ base: 32, md: 40 }}
+        pb={20} 
         bg="brand.primary"
         color="white"
       >
