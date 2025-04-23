@@ -36,7 +36,7 @@ const ChefElias: React.FC = () => {
             >
               Chef Elias Taddesse
             </Heading>
-            <Text fontSize="2xl" color="white">
+            <Text fontSize="2xl" color="white" pb={50}>
               Ethiopian-born, French-trained Michelin-starred chef bringing innovative fusion cuisine to Washington DC
               through his acclaimed restaurants Mélange, Doro Soul Food, and Moya.
             </Text>
