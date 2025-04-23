@@ -67,17 +67,6 @@ const ChefElias: React.FC = () => {
 
             <Box>
               <Heading as="h2" size="xl" mb={4}>
-                Recent Accolades
-              </Heading>
-              <UnorderedList spacing={2} fontSize="lg" styleType="none" ml={0}>
-                <ListItem>• Semi-finalist for James Beard Foundation's Emerging Chef of the Year 2023</ListItem>
-                <ListItem>• Finalist for RAMMY's Rising Culinary Star of the Year 2022</ListItem>
-                <ListItem>• Eater DC's Chef of the Year 2021</ListItem>
-              </UnorderedList>
-            </Box>
-
-            <Box>
-              <Heading as="h2" size="xl" mb={4}>
                 Culinary Philosophy
               </Heading>
               <Text fontSize="lg">
