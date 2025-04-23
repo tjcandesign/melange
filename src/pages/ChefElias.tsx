@@ -249,38 +249,44 @@ const ChefElias: React.FC = () => {
               <Heading size="xl" fontFamily="heading">Accolades & Recognition</Heading>
             </Box>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} w="full">
-              <Box p={8} bg="white" rounded="lg" shadow="md" h="100px">
-                <VStack spacing={4} align="flex-start" w="full">
-                  <Image
-                    src="/images/press mentions/jamesbeardfoundation.png"
-                    alt="James Beard Foundation"
-                    h="60px"
-                    objectFit="contain"
-                  />
+              <Box p={6} bg="white" rounded="lg" shadow="md" minH="200px">
+                <VStack spacing={3} align="flex-start" w="full">
+                  <Box h="60px" w="full" display="flex" alignItems="center">
+                    <Image
+                      src="/images/press mentions/jamesbeardfoundation.png"
+                      alt="James Beard Foundation"
+                      maxH="50px"
+                      objectFit="contain"
+                    />
+                  </Box>
                   <Text fontWeight="bold" fontSize="lg">James Beard Foundation</Text>
                   <Text>Semi-finalist for Emerging Chef of the Year 2023</Text>
                 </VStack>
               </Box>
-              <Box p={8} bg="white" rounded="lg" shadow="md" h="100px">
-                <VStack spacing={4} align="flex-start" w="full">
-                  <Image
-                    src="/images/press mentions/rammys.png"
-                    alt="RAMMYs"
-                    h="60px"
-                    objectFit="contain"
-                  />
+              <Box p={6} bg="white" rounded="lg" shadow="md" minH="200px">
+                <VStack spacing={3} align="flex-start" w="full">
+                  <Box h="60px" w="full" display="flex" alignItems="center">
+                    <Image
+                      src="/images/press mentions/rammys.png"
+                      alt="RAMMYs"
+                      maxH="50px"
+                      objectFit="contain"
+                    />
+                  </Box>
                   <Text fontWeight="bold" fontSize="lg">RAMMYs</Text>
                   <Text>Finalist for Rising Culinary Star of the Year 2022</Text>
                 </VStack>
               </Box>
-              <Box p={8} bg="white" rounded="lg" shadow="md" h="100px">
-                <VStack spacing={4} align="flex-start" w="full">
-                  <Image
-                    src="/images/press mentions/eaterawards.png"
-                    alt="Eater DC"
-                    h="60px"
-                    objectFit="contain"
-                  />
+              <Box p={6} bg="white" rounded="lg" shadow="md" minH="200px">
+                <VStack spacing={3} align="flex-start" w="full">
+                  <Box h="60px" w="full" display="flex" alignItems="center">
+                    <Image
+                      src="/images/press mentions/eaterawards.png"
+                      alt="Eater DC"
+                      maxH="50px"
+                      objectFit="contain"
+                    />
+                  </Box>
                   <Text fontWeight="bold" fontSize="lg">Eater DC</Text>
                   <Text>Chef of the Year 2021</Text>
                 </VStack>
