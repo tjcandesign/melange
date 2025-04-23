@@ -153,7 +153,7 @@ const ChefElias: React.FC = () => {
                       <HStack align="center" spacing={2}>
                         <Text fontFamily="Courier New" fontWeight="bold">2017</Text>
                         <HStack>
-                          <Text>- Mélange at Wet Dog Tavern</Text>
+                          <Text>- Mélange Opens Permanent pop-upat Wet Dog Tavern</Text>
                           <Icon as={HiLocationMarker} />
                           <Text>U Street</Text>
                         </HStack>
