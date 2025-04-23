@@ -113,7 +113,7 @@ const ChefElias: React.FC = () => {
               <Box p={8} bg="white" rounded="lg" shadow="md">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
-                    src="/images/jamesbeardfoundation.png"
+                    src="/images/press-mentions/jamesbeardfoundation.png"
                     alt="James Beard Foundation"
                     h="60px"
                     objectFit="contain"
@@ -125,7 +125,7 @@ const ChefElias: React.FC = () => {
               <Box p={8} bg="white" rounded="lg" shadow="md">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
-                    src="/images/rammys.png"
+                    src="/images/press-mentions/rammys.png"
                     alt="RAMMYs"
                     h="60px"
                     objectFit="contain"
@@ -137,7 +137,7 @@ const ChefElias: React.FC = () => {
               <Box p={8} bg="white" rounded="lg" shadow="md">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
-                    src="/images/eaterawards.png"
+                    src="/images/press-mentions/eaterawards.png"
                     alt="Eater DC"
                     h="60px"
                     objectFit="contain"
