@@ -55,7 +55,7 @@ const ChefElias: React.FC = () => {
                 </Heading>
               </Box>
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full" alignItems="start">
-                <VStack spacing={4} align="flex-start" maxW="container.sm">
+                <VStack spacing={4} align="flex-start" maxW="container.sm" pt={12}>
                   <Text fontSize="lg">
                     Chef Elias's distinguished career includes earning a Michelin star as head chef at Caviar Russe in New York City.
                     His entrepreneurial journey in DC began with a pop-up at Neal Place Tap & Garden in 2016, followed by the
