@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
 
         <HStack justify="space-between" fontSize="sm">
           <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} All rights reserved.</Text>
-          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase" opacity={0.5}>Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Workhorse Collective</Link></Text>
+          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase" opacity={0.5}>Hand built with ❤️ in DC by <Link href="https://tjcandesign.github.io/" isExternal color="white" textDecoration="underline">TJ CICHECKI</Link></Text>
         </HStack>
       </Container>
     </Box>
