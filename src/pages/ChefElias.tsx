@@ -49,9 +49,11 @@ const ChefElias: React.FC = () => {
         <Container maxW="container.xl">
           <VStack spacing={12} align="flex-start" w="full">
             <Box w="full">
-              <Heading as="h2" size="xl" mb={8}>
-                Elias's Career Highlights
-              </Heading>
+              <Box maxW="520px" mb={12}>
+                <Heading as="h2" size="xl">
+                  Elias's Career Highlights
+                </Heading>
+              </Box>
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full" alignItems="start">
                 <VStack spacing={4} align="flex-start" maxW="container.sm">
                   <Text fontSize="lg">
@@ -236,10 +238,12 @@ const ChefElias: React.FC = () => {
       {/* Accolades Section */}
       <Box py={20}>
         <Container maxW="container.xl">
-          <VStack spacing={12} align="flex-start" w="full">
-            <Heading size="xl" fontFamily="heading">Accolades & Recognition</Heading>
+          <VStack spacing={12} align="flex-start" w="full" pb={150}>
+            <Box maxW="520px">
+              <Heading size="xl" fontFamily="heading">Accolades & Recognition</Heading>
+            </Box>
             <SimpleGrid columns={{ base: 1, md: 3 }} spacing={8} w="full">
-              <Box p={8} bg="white" rounded="lg" shadow="md">
+              <Box p={8} bg="white" rounded="lg" shadow="md" h="100px">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
                     src="/images/press mentions/jamesbeardfoundation.png"
@@ -251,7 +255,7 @@ const ChefElias: React.FC = () => {
                   <Text>Semi-finalist for Emerging Chef of the Year 2023</Text>
                 </VStack>
               </Box>
-              <Box p={8} bg="white" rounded="lg" shadow="md">
+              <Box p={8} bg="white" rounded="lg" shadow="md" h="100px">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
                     src="/images/press mentions/rammys.png"
@@ -263,7 +267,7 @@ const ChefElias: React.FC = () => {
                   <Text>Finalist for Rising Culinary Star of the Year 2022</Text>
                 </VStack>
               </Box>
-              <Box p={8} bg="white" rounded="lg" shadow="md">
+              <Box p={8} bg="white" rounded="lg" shadow="md" h="100px">
                 <VStack spacing={4} align="flex-start" w="full">
                   <Image
                     src="/images/press mentions/eaterawards.png"
