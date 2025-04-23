@@ -97,8 +97,8 @@ const ChefElias: React.FC = () => {
                 w="full"
               />
             </Box>
-            <VStack align="flex-start" spacing={8} order={{ base: 1, md: 2 }}>
-              <Heading size="xl" fontFamily="heading">DC Culinary Journey</Heading>
+            <VStack align="flex-start" spacing={8} order={{ base: 1, md: 2 }} maxW="510px">
+              <Heading size="xl" fontFamily="heading">A DC Culinary Journey</Heading>
               <VStack spacing={8} align="stretch" w="full">
                 <Text fontSize="lg" lineHeight="tall">
                   Chef Elias's DC journey began in 2016 with a pop-up at Neal Place Tap & Garden.
