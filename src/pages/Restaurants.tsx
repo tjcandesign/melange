@@ -84,9 +84,7 @@ const Restaurants: React.FC = () => {
                 From Michelin-starred Chef Elias Taddesse, Doro Soul Food creates a unique dining 
                 experience that celebrates the natural harmony between these two rich culinary traditions.
               </Text>
-              <ChakraLink href="https://www.dorosoulfood.com/" isExternal color="brand.accent">
-                Visit Website
-              </ChakraLink>
+
               <Box>
                 <Text fontWeight="bold" mb={2}>Location</Text>
                 <Text>Washington, DC</Text>
@@ -106,7 +104,7 @@ const Restaurants: React.FC = () => {
               order={{ base: 1, md: 2 }}
             >
               <Image
-                src="/images/melange-chicken.jpg"
+                src="/images/doro.png"
                 alt="Doro Soul Food Interior"
                 rounded="lg"
                 shadow="xl"
