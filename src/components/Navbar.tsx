@@ -83,8 +83,7 @@ const Navbar: React.FC = () => {
         opacity={1}
         visibility={isOpen ? 'visible' : 'hidden'}
         flexDirection="column"
-        justifyContent="center"
-        pt={16}
+        pt={170}
       >
         <Container maxW="container.xl">
           <VStack spacing={6} align="stretch" ml={8}>
@@ -92,15 +91,16 @@ const Navbar: React.FC = () => {
               <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Chef Elias Taddesse</Link>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
-              <Flex
-                direction="column"
-                align="flex-start"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onRestaurantsToggle();
-                }}
-              >
-                <Flex align="center" w="full" cursor="pointer">
+              <VStack spacing={isRestaurantsOpen ? 4 : 0} align="stretch" w="full">
+                <Flex
+                  align="center"
+                  w="full"
+                  cursor="pointer"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onRestaurantsToggle();
+                  }}
+                >
                   <Text fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">
                     Our Restaurants
                   </Text>
@@ -115,13 +115,13 @@ const Navbar: React.FC = () => {
                   />
                 </Flex>
                 <Box
-                  overflow="hidden"
-                  maxH={isRestaurantsOpen ? '200px' : '0'}
-                  transition="max-height 0.3s ease-in-out"
-                  w="full"
-                  mt={isRestaurantsOpen ? 4 : 0}
+                  h={isRestaurantsOpen ? 'auto' : 0}
+                  opacity={isRestaurantsOpen ? 1 : 0}
+                  transition="all 0.3s ease-in-out"
+                  visibility={isRestaurantsOpen ? 'visible' : 'hidden'}
+                  pl={4}
                 >
-                  <VStack spacing={4} align="flex-start" pl={4}>
+                  <VStack spacing={4} align="flex-start">
                     <Link
                       as={RouterLink}
                       to="/restaurants#melange"
@@ -154,7 +154,7 @@ const Navbar: React.FC = () => {
                     </Link>
                   </VStack>
                 </Box>
-              </Flex>
+              </VStack>
             </Box>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
               <Link as={RouterLink} to="/media-coverage" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Media Coverage</Link>
