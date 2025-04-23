@@ -8,9 +8,7 @@ const Footer: React.FC = () => {
       <Container maxW="container.xl">
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
           <Stack spacing={6}>
-            <Text fontSize="lg" fontFamily="heading" fontWeight="bold">
-              Melange Foods, Inc.
-            </Text>
+            <Box as="img" src="/images/SVG/logo.svg" height="60px" filter="brightness(0) invert(1)" mb={4} />
             <Text fontSize="sm">
               Where Ethiopian heritage meets culinary innovation, under the vision of
               Michelin-starred Chef Elias Taddesse.
@@ -49,10 +47,7 @@ const Footer: React.FC = () => {
         <Divider my={8} borderColor="whiteAlpha.400" />
 
         <HStack justify="space-between" fontSize="sm">
-          <HStack spacing={2}>
-            <Box as="img" src="/images/SVG/logo.svg" height="40px" filter="brightness(0) invert(1)" />
-            <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} All rights reserved.</Text>
-          </HStack>
+          <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase">© {new Date().getFullYear()} All rights reserved.</Text>
           <Text fontFamily="mono" fontWeight="bold" textTransform="uppercase" opacity={0.5}>Built by <Link href="https://wrkhrs.co" isExternal color="white" textDecoration="underline">Workhorse Collective</Link></Text>
         </HStack>
       </Container>
