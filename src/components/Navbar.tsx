@@ -84,10 +84,10 @@ const Navbar: React.FC = () => {
         visibility={isOpen ? 'visible' : 'hidden'}
         flexDirection="column"
         justifyContent="center"
-        pt={24}
+        pt={16}
       >
         <Container maxW="container.xl">
-          <VStack spacing={8} align="stretch" ml={8}>
+          <VStack spacing={6} align="stretch" ml={8}>
             <Box borderBottom="1px" borderColor="whiteAlpha.200" pb={8}>
               <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase" onClick={handleNavigation}>Chef Elias Taddesse</Link>
             </Box>
