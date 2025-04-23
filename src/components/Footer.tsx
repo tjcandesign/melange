@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
     <Box bg="brand.primary" color="white" py={10}>
       <Container maxW="container.xl">
         <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
-          <Stack spacing={6}>
-            <Box as="img" src="/images/SVG/logo.svg" height="60px" filter="brightness(0) invert(1)" mb={4} />
+          <Stack spacing={6} w="full">
+            <Box as="img" src="/images/SVG/logo.svg" height="60px" filter="brightness(0) invert(1)" alignSelf="flex-start" />
             <Text fontSize="sm">
               Where Ethiopian heritage meets culinary innovation, under the vision of
               Michelin-starred Chef Elias Taddesse.
