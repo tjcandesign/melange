@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       <Box
-        display={{ base: isOpen ? 'flex' : 'none', md: 'none' }}
+        display={{ base: 'flex', md: 'none' }}
         position="fixed"
         top={0}
         left={0}
@@ -76,23 +76,13 @@ const Navbar: React.FC = () => {
         bottom={0}
         bg="brand.primary"
         zIndex={20}
-        transform={isOpen ? 'translateX(0)' : 'translateX(-100%)'}
-        transition="all 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
-        opacity={isOpen ? 1 : 0}
-        backdropFilter="blur(8px)"
-        _before={{
-          content: '""',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          bg: 'brand.primary',
-          opacity: 0.97,
-          zIndex: -1
-        }}
+        transform={isOpen ? 'translateY(0)' : 'translateY(-100%)'}
+        transition="transform 0.3s ease-in-out"
+        opacity={1}
+        visibility={isOpen ? 'visible' : 'hidden'}
         flexDirection="column"
         justifyContent="center"
+        pt={24}
       >
         <Container maxW="container.xl">
           <VStack spacing={8} align="stretch" ml={8}>
