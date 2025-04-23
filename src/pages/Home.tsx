@@ -104,13 +104,13 @@ const Home: React.FC = () => {
           <VStack spacing={{ base: 10, md: 8 }} align="flex-start" maxW="600px">
             <Heading
               as="h1"
-              fontSize={{ base: '2xl', md: '4xl' }}
+              fontSize={{ base: '2xl', sm: '3xl', md: '5xl', lg: '6xl' }}
               color="white"
               fontFamily="heading"
             >
               Where Ethiopian Heritage Shapes Modern American Dining
             </Heading>
-            <Text fontSize={{ base: 'lg', md: 'xl' }} fontFamily="Inter">
+            <Text fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }} fontFamily="Inter">
               From Ethiopia to DC, Michelin-starred Chef Elias Taddesse brings his heritage
               and classical training to create memorable dining experiences
             </Text>
@@ -142,7 +142,7 @@ const Home: React.FC = () => {
               Three distinct restaurants where Ethiopian traditions meet American favorites
             </Text>
           </VStack>
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full" alignItems="stretch">
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full" alignItems="stretch" mx="-6" px={6}>
             {restaurants.map((restaurant) => (
               <RestaurantCard
                 key={restaurant.name}

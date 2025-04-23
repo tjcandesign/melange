@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
           <Stack
             display={{ base: 'none', md: 'flex' }}
             direction="row"
-            spacing={8}
+            spacing={16}
             align="center"
           >
             <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="lg" textTransform="uppercase">Chef Elias Taddesse</Link>
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
         justifyContent="center"
       >
         <Container maxW="container.xl">
-          <VStack spacing={12} align="flex-start">
+          <VStack spacing={16} align="flex-start">
             <Link as={RouterLink} to="/chef-elias" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Chef Elias Taddesse</Link>
             <Link as={RouterLink} to="/restaurants" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Our Restaurants</Link>
             <Link as={RouterLink} to="/press" fontFamily="mono" color="white" fontWeight="bold" fontSize="xl" textTransform="uppercase">Press</Link>

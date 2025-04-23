@@ -11,6 +11,19 @@ interface RestaurantCardProps {
 }
 
 const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo }) => {
+  const getImage = (name: string) => {
+    switch (name) {
+      case "Mélange":
+        return "/images/burger.jpg";
+      case "Doro Soul Food":
+        return "/images/doro.png";
+      case "Moya":
+        return "/images/melange-chicken.jpg";
+      default:
+        return "/images/burger.jpg";
+    }
+  };
+
   return (
     <MotionBox
       whileHover={{ y: -10 }}
@@ -22,15 +35,37 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo
     >
       <VStack spacing={0} h="full">
         <Box
+          position="relative"
           h="200px"
+          w="full"
+          overflow="hidden"
+          borderBottom="1px"
+          borderColor="gray.100"
+        >
+          <Box
+            position="absolute"
+            top={0}
+            left={0}
+            right={0}
+            bottom={0}
+          >
+            <Image
+              src={getImage(name)}
+              alt={name}
+              w="full"
+              h="full"
+              objectFit="cover"
+            />
+          </Box>
+        </Box>
+        <Box
+          h="100px"
           w="full"
           display="flex"
           alignItems="center"
           justifyContent="center"
           bg="gray.50"
           p={6}
-          borderBottom="1px"
-          borderColor="gray.100"
         >
           <Image
             src={logo}
