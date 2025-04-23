@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Container, Heading, Text, VStack, UnorderedList, ListItem, Image, SimpleGrid } from '@chakra-ui/react';
+import { Box, Container, Heading, Text, VStack, UnorderedList, ListItem, Image, SimpleGrid, HStack, Icon } from '@chakra-ui/react';
+import { HiLocationMarker } from 'react-icons/hi';
 
 const ChefElias: React.FC = () => {
   return (
@@ -49,10 +50,10 @@ const ChefElias: React.FC = () => {
           <VStack spacing={12} align="flex-start" w="full">
             <Box w="full">
               <Heading as="h2" size="xl" mb={8}>
-                Career Highlights
+                Elias's Career Highlights
               </Heading>
               <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8} w="full" alignItems="start">
-                <VStack spacing={4} align="flex-start">
+                <VStack spacing={4} align="flex-start" maxW="container.sm">
                   <Text fontSize="lg">
                     Chef Elias's distinguished career includes earning a Michelin star as head chef at Caviar Russe in New York City.
                     His entrepreneurial journey in DC began with a pop-up at Neal Place Tap & Garden in 2016, followed by the
@@ -71,7 +72,7 @@ const ChefElias: React.FC = () => {
                     rounded="lg"
                     shadow="lg"
                     w="full"
-                    h="300px"
+                    h="400px"
                     objectFit="cover"
                   />
                 </Box>
@@ -93,7 +94,7 @@ const ChefElias: React.FC = () => {
               />
             </Box>
             <VStack align="flex-start" spacing={8} order={{ base: 1, md: 2 }}>
-              <Heading size="xl" fontFamily="heading">Culinary Journey</Heading>
+              <Heading size="xl" fontFamily="heading">DC Culinary Journey</Heading>
               <VStack spacing={8} align="stretch" w="full">
                 <Text fontSize="lg" lineHeight="tall">
                   Chef Elias's DC journey began in 2016 with a pop-up at Neal Place Tap & Garden.
@@ -115,10 +116,10 @@ const ChefElias: React.FC = () => {
                         borderRadius="full"
                         bg="brand.primary"
                       />
-                      <VStack align="start" spacing={1}>
-                        <Text fontWeight="bold">2025</Text>
-                        <Text>Melange Inc. opens including a new concept Moya</Text>
-                      </VStack>
+                      <HStack align="center" spacing={2}>
+                        <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
+                        <Text>- Elias wins a burger challenge by a 13-1 vote</Text>
+                      </HStack>
                     </Box>
 
                     <Box position="relative">
@@ -130,10 +131,14 @@ const ChefElias: React.FC = () => {
                         borderRadius="full"
                         bg="brand.primary"
                       />
-                      <VStack align="start" spacing={1}>
-                        <Text fontWeight="bold">2022</Text>
-                        <Text>Doro Soul Food opens</Text>
-                      </VStack>
+                      <HStack align="center" spacing={2}>
+                        <Text fontFamily="Courier New" fontWeight="bold">2016</Text>
+                        <HStack>
+                          <Text>- Salt n' Pepper Burgers Pop-up</Text>
+                          <Icon as={HiLocationMarker} />
+                          <Text>Harvey's Market, Union Market</Text>
+                        </HStack>
+                      </HStack>
                     </Box>
 
                     <Box position="relative">
@@ -145,10 +150,14 @@ const ChefElias: React.FC = () => {
                         borderRadius="full"
                         bg="brand.primary"
                       />
-                      <VStack align="start" spacing={1}>
-                        <Text fontWeight="bold">2020</Text>
-                        <Text>Mélange moves to new home on 9th St NW in shared space</Text>
-                      </VStack>
+                      <HStack align="center" spacing={2}>
+                        <Text fontFamily="Courier New" fontWeight="bold">2017</Text>
+                        <HStack>
+                          <Text>- Mélange at Wet Dog Tavern</Text>
+                          <Icon as={HiLocationMarker} />
+                          <Text>U Street</Text>
+                        </HStack>
+                      </HStack>
                     </Box>
 
                     <Box position="relative">
@@ -160,10 +169,10 @@ const ChefElias: React.FC = () => {
                         borderRadius="full"
                         bg="brand.primary"
                       />
-                      <VStack align="start" spacing={1}>
-                        <Text fontWeight="bold">2017</Text>
-                        <Text>Mélange at Wet Dog Tavern (Location U Street)</Text>
-                      </VStack>
+                      <HStack align="center" spacing={2}>
+                        <Text fontFamily="Courier New" fontWeight="bold">2020</Text>
+                        <Text>- Mélange moves to new home on 9th St NW in shared space</Text>
+                      </HStack>
                     </Box>
 
                     <Box position="relative">
@@ -175,10 +184,10 @@ const ChefElias: React.FC = () => {
                         borderRadius="full"
                         bg="brand.primary"
                       />
-                      <VStack align="start" spacing={1}>
-                        <Text fontWeight="bold">2016</Text>
-                        <Text>Salt n' Pepper Burgers Pop-up (Location: Harvey's Market, Union Market)</Text>
-                      </VStack>
+                      <HStack align="center" spacing={2}>
+                        <Text fontFamily="Courier New" fontWeight="bold">2022</Text>
+                        <Text>- Doro Soul Food opens</Text>
+                      </HStack>
                     </Box>
 
                     <Box position="relative">
@@ -190,10 +199,10 @@ const ChefElias: React.FC = () => {
                         borderRadius="full"
                         bg="brand.primary"
                       />
-                      <VStack align="start" spacing={1}>
-                        <Text fontWeight="bold">2016</Text>
-                        <Text>Elias wins a burger challenge by a 13-1 vote</Text>
-                      </VStack>
+                      <HStack align="center" spacing={2}>
+                        <Text fontFamily="Courier New" fontWeight="bold">2025</Text>
+                        <Text>- Melange Inc. opens including a new concept Moya</Text>
+                      </HStack>
                     </Box>
                   </VStack>
                 </Box>
