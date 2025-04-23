@@ -12,16 +12,19 @@ const Home: React.FC = () => {
     {
       name: "Mélange",
       description: "DC's acclaimed restaurant where Ethiopian spices meet French culinary precision in every handcrafted burger",
+      image: "/images/Melange-card.png",
       logo: "/images/melange-logo.png"
     },
     {
       name: "Doro Soul Food",
       description: "Soul food reimagined through Ethiopian traditions, bringing warmth to every plate",
+      image: "/images/Doro-card.png",
       logo: "/images/doro-logo.png"
     },
     {
       name: "Moya",
       description: "Ethiopian flavors meet Mexican traditions, creating a fresh take on tacos",
+      image: "/images/Moya-card.png",
       logo: "/images/moya-logo.png"
     }
   ];
@@ -44,7 +47,7 @@ const Home: React.FC = () => {
           zIndex="-2"
           bgImage="url('/images/Elias_hero.jpg')"
           bgPosition="center"
-          bgAttachment={{ base: 'scroll', md: 'fixed' }}
+          bgAttachment="scroll"
           bgSize="cover"
         />
         {/* Dark Overlay */}
@@ -101,10 +104,10 @@ const Home: React.FC = () => {
           transformOrigin="bottom right"
         />
         <Container maxW="container.xl" h="100%" display="flex" alignItems="center">
-          <VStack spacing={{ base: 10, md: 8 }} align="flex-start" maxW="600px">
+          <VStack spacing={{ base: 12, md: 10 }} align="flex-start" maxW="800px">
             <Heading
               as="h1"
-              fontSize={{ base: '2xl', sm: '3xl', md: '5xl', lg: '6xl' }}
+              fontSize={{ base: '2xl', sm: '4xl', md: '5xl', lg: 'var(--chakra-fontSizes-6xl)' }}
               color="white"
               fontFamily="heading"
             >
@@ -142,12 +145,13 @@ const Home: React.FC = () => {
               Three distinct restaurants where Ethiopian traditions meet American favorites
             </Text>
           </VStack>
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full" alignItems="stretch" mx="-6" px={6}>
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full" alignItems="stretch">
             {restaurants.map((restaurant) => (
               <RestaurantCard
                 key={restaurant.name}
                 name={restaurant.name}
                 description={restaurant.description}
+                image={restaurant.image}
                 logo={restaurant.logo}
               />
             ))}

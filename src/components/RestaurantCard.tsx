@@ -7,27 +7,13 @@ const MotionBox = motion(Box);
 interface RestaurantCardProps {
   name: string;
   description: string;
+  image: string;
   logo: string;
 }
 
-const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo }) => {
-  const getImage = (name: string) => {
-    switch (name) {
-      case "Mélange":
-        return "/images/burger.jpg";
-      case "Doro Soul Food":
-        return "/images/doro.png";
-      case "Moya":
-        return "/images/melange-chicken.jpg";
-      default:
-        return "/images/burger.jpg";
-    }
-  };
-
+const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, image, logo }) => {
   return (
-    <MotionBox
-      whileHover={{ y: -10 }}
-      transition={{ duration: 0.3 }}
+    <Box
       bg="white"
       rounded="lg"
       overflow="hidden"
@@ -50,7 +36,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo
             bottom={0}
           >
             <Image
-              src={getImage(name)}
+              src={image}
               alt={name}
               w="full"
               h="full"
@@ -82,7 +68,7 @@ const RestaurantCard: React.FC<RestaurantCardProps> = ({ name, description, logo
           </Text>
         </Box>
       </VStack>
-    </MotionBox>
+    </Box>
   );
 };
 

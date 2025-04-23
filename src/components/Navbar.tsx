@@ -74,11 +74,23 @@ const Navbar: React.FC = () => {
         left={0}
         right={0}
         bottom={0}
-        bgColor="rgba(0, 48, 135, 0.95)"
+        bg="brand.primary"
         zIndex={20}
         transform={isOpen ? 'translateX(0)' : 'translateX(-100%)'}
-        transition="all 0.3s ease-in-out"
+        transition="all 0.4s cubic-bezier(0.4, 0, 0.2, 1)"
         opacity={isOpen ? 1 : 0}
+        backdropFilter="blur(8px)"
+        _before={{
+          content: '""',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          bg: 'brand.primary',
+          opacity: 0.97,
+          zIndex: -1
+        }}
         flexDirection="column"
         justifyContent="center"
       >
